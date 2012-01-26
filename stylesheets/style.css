@@ -45,12 +45,12 @@ a:hover {
 
 h2 > a:hover {
 	text-decoration: none;
-	color: #ebebeb;
 }
 
 p { 
 	margin-top: .75em; 
 	color: #333;
+	//display: none;
 }
 
 #projects {
@@ -65,20 +65,63 @@ p {
 	margin-bottom: 1.5em;
 }
 
-h2 {
+h2 > a, h2{
 	//margin-left: -24px;
-	padding-left: 24px;
-	margin-bottom: .5em;
-	padding-right: 24px;
 	display: inline-block;
 	-webkit-border-radius: 48px;
+	-moz-border-radius: 48px;
+	border-radius: 48px;
+}
+
+h2 > a, #contact > h2 {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+h2 {
+	margin-bottom: .5em;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-property: background;
+	transition-duration: .5s;
+	transition-timing-function: ease-in-out;
+	-moz-transition-property: background;
+	-moz-transition-duration: .5s;
+	-moz-transition-timing-function: ease-in-out;
 }
 
 h1 {
 	font-weight: 300; 
 	font-size: 2.5em;
-	margin-left: -.8em;
+	margin-left: -.85em;
+	margin-bottom: .75em;
 	color: #444;
 }
 
-ul { list-style: none; }
+ul { 
+	list-style: none; 
+	margin-left: -2.46em;
+}
+
+#privacyparrot {
+	margin-top: 1.5em; padding-left: 2.5em;
+}
+
+#privacyparrot > h2 {
+	background: #3dc;
+}
+
+#minifylist > h2 {
+	background: #63f;
+}
+
+#contact > h2 {
+	background: #f63;
+	margin-left: -1em;
+	color: #fff;
+}
+
+#privacyparrot > h2:hover, #minifylist > h2:hover {
+	background: #ccc;
+}
