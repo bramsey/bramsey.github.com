@@ -9,11 +9,24 @@ body {
 	background: #fff;
 }
 
+#container {
+	margin: auto;
+	margin-top: 50px;
+	width: 35em;
+	//background: #fff;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	-webkit-border-radius: 96px;
+	-moz-border-radius: 96px;
+	border-radius: 96px;
+	//border: 1px solid #ccc;
+}
+
 h1, h2, h3, h4, h5, h6, a, span {
 	font-family: 'helvetica neue', serif;
 }
 h1, h2, h3, h4, h5, h6 {
-	color: #444;
+	color: #333;
 	font-weight: 500;
 }
 
@@ -37,35 +50,35 @@ h2 > a:hover {
 
 p { 
 	margin-top: .75em; 
-	color: #000;
-}
-
-#container {
-	margin: 2em;
-	margin-top: 1.5em;
+	color: #333;
 }
 
 #projects {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+	//margin-left: 1.5em;
 	position: relative;
 }
 
 .project {
-	width: 30em;
+	width: 26em;
 	margin-bottom: 1.5em;
 }
 
 h2 {
-	margin-left: -1.5em;
-	padding-left: 1.5em;
+	//margin-left: -24px;
+	padding-left: 24px;
 	margin-bottom: .5em;
-	padding-right: .5em;
+	padding-right: 24px;
 	display: inline-block;
+	-webkit-border-radius: 48px;
 }
 
 h1 {
-	font-weight: normal; 
+	font-weight: 300; 
+	font-size: 2.5em;
+	margin-left: -.2em;
+	color: #444;
 }
 
-ul { list-style: square; }
+ul { list-style: none; }
