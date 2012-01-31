@@ -7,13 +7,14 @@
 
 body {
 	background: #fff;
-	
 }
+
+a:visited { color: #00f; }
 
 #container {
 	margin: auto;
 	margin-top: 50px;
-	width: 740px;
+	width: 720px;
 	//background: #fff;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
@@ -24,7 +25,17 @@ body {
 	
 }
 
-h1, h2, h3, h4, h5, h6, a, span {
+nav {
+	width: 240px;
+	float: left;
+}
+
+li {
+	font-size: 1.4em;
+	line-height: 2.1em;
+}
+
+*, h1, h2, h3, h4, h5, h6, a, span {
 	font-family: 'helvetica neue', serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -38,9 +49,13 @@ a {
 
 h2 > a {
 	color: #444;
-	font-size: 1.5em;
+	//font-size: 1.5em;
 }
 
+
+a.selected {
+	color: #000;
+}
 
 a:hover {
 	text-decoration: underline;
@@ -57,34 +72,25 @@ p {
 }
 
 #projects {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
 	//margin-left: 1.5em;
+	width: 480px;
+	float: left;
 	position: relative;
+	//display: none;
 }
 
 .project {
-	//width: 26em;
 	margin-bottom: 1.5em;
-	min-height: 40px;
-	min-width: 140px;
 }
 
 .project {
-	margin-left: 1em;
-	display: inline-block;
-	-webkit-border-radius: 24px;
-	-moz-border-radius: 24px;
-	border-radius: 24px;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	padding: 24px;
+	display: block;
 }
 
 .project > p {
 	color: #444;
 	//display: none;
-	width: 19em;
+	width: 27em;
 }
 
 h2 {
@@ -102,18 +108,17 @@ h2 {
 
 h1 {
 	font-weight: 300; 
-	font-size: 8.7em;
+	font-size: 9.96em;
 	//margin-bottom: .75em;
-	margin-left: .24em;
 	color: #444;
 }
 
 ul { 
 	list-style: none; 
+	margin-left: .6em;
 }
 
 #privacyparrot {
-	margin-top: 1.5em;
 }
 
 #privacyparrot > h2 > a {
