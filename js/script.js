@@ -12,14 +12,14 @@ $(document).ready(function(){
 		circular: false,
 		afterEnd: function(a) {
 	        if(a[0].id == "first") {
-				$('.prev').hide();
-				$('.next').show();
+				$('.prev').fadeOut('fast');
+				$('.next').fadeIn('fast');
 			} else if(a[0].id == "last") {
-				$('.prev').show();
-				$('.next').hide();
+				$('.prev').fadeIn('fast');
+				$('.next').fadeOut('fast');
 			} else {
-				$('.prev').show();
-				$('.next').show();
+				$('.prev').fadeIn('fast');
+				$('.next').fadeIn('fast');
 			}
 	    }
     });

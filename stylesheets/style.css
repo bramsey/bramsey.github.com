@@ -204,5 +204,33 @@ textarea {
 	margin-bottom: .5em;
 }
 
+.prev, .next {
+	height: 96px;
+	width: 96px;
+	//margin: 1em;
+	position: absolute;
+	z-index: 999;
+	top: 170px;
+	font-size: 4em;
+	font-family: Verdana;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	cursor:  pointer;
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ebebeb), to(#ccc)); 
+	background:  -moz-linear-gradient(25% 75% 90deg,#ebebeb, #ccc);
+}
 
-.prev { display: none; }
+.prev {
+	left: -124px;
+}
+
+.next {
+	right: -124px;
+}
+
+
+//.prev { display: none; }
+
+
