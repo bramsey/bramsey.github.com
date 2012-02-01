@@ -27,25 +27,76 @@
 			<div class="container">
 				<h1>My work.</h1>
 				<div id="projects">
+					<button class="prev">prev</button>
+					<button class="next">next</button>
+					<div class="carousel">
+						<ul>
+							<li id="first">
+								<div class="project">
+									<h2>Privacy Parrot</h2>
+									<h3>Project Summary:</h3>
+									<p>
+										Helps you make sense of privacy policies and lets you know if a site can sell your personal information.
+									</p>
+									<h3>What I did:</h3>
+									<p>
+										I conceptualized the tool, designed the site, and developed the front-end.
+									</p>
+									<h3><a href="http://privacyparrot.com" target="_blank">check it out</a></h3>
+								</div>
+							</li>
+							<li>
+								<div class="project">
+									<h2>Minify List</h2>
+									<h3>Project Summary:</h3>
+									<p>
+										Helps you organize your stuff, decide whether to sell it, and list it for sale online.
+									</p>
+									<h3>What I did:</h3>
+									<p>
+										I helped conceptualized the tool, designed and developed the site.
+									</p>
+									<h3><a href="http://minifylist.com" target="_blank">check it out</a></h3>
+								</div>
+							</li>
+							<li id="last">
+								<div class="project">
+									<h2>Side Projects</h2>
+									<h3>Project 1:</h3>
+									<p>
+										Helps you organize your stuff, decide whether to sell it, and list it for sale online.
+									</p>
+									<h3>Project 2:</h3>
+									<p>
+										I helped conceptualized the tool, designed and developed the site.
+									</p>
+									<h3><a href="http://minifylist.com" target="_blank">check it out</a></h3>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
 		<footer id="contact">
 			<div class="container">
 				<h1>Contact me.</h1>
-				<div class="input">
-					<input type="email" placeholder="Your email"></input>
-				</div>
-				<div class="input">
-					<input type="text" placeholder="Puzzle solution"></input>
-				</div>
-				<div class="input">
-					<textarea placeholder="Your message" rows="4"></textarea>
-				</div>
-				<div class="actions">
-					<input type="submit"></input>
+				<div id="form">
+					<div class="input">
+						<input type="email" placeholder="Your email"></input>
+					</div>
+					<div class="input">
+						<textarea placeholder="Your message" rows="4"></textarea>
+					</div>
+					<div class="actions">
+						<input type="submit" value="Send"></input>
+					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+		<script src="js/jcarousellite_1.0.1.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

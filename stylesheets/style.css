@@ -71,24 +71,37 @@ p {
 }
 
 #projects {
-	width: 480px;
-	float: left;
+	//width: 480px;
+	display: inline-block;
 	position: relative;
 }
 
 .project {
 	margin-bottom: 1.5em;
-}
-
-.project {
-	display: block;
+	
+	background: #fff;
+	
+	padding: 24px;
+	float: left;
+	
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	
+	box-shadow: 0 2px 2px #818181;
+	-webkit-box-shadow: 0 2px 2px #818181;
+	-moz-box-shadow: 0 2px 2px #818181;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=2, offY=2, positive=true);
 }
 
 .project > p {
 	color: #444;
 	//display: none;
 	width: 27em;
+	margin: 1.5em;
 }
+
+h3 { margin-left: .75em; }
 
 h2 {
 	margin-bottom: .5em;
@@ -109,8 +122,12 @@ h1 {
 
 #hi > div > h1 {
 	font-size: 9.96em;
+	margin-top: 100px;
 }
 
+#work > div > h1 {
+	text-shadow: 0px 2px 3px #fff;
+}
 
 
 ul { 
@@ -120,21 +137,72 @@ ul {
 
 
 #contact {
-	background: #3cd;
+	background: #ebebff;
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3df), to(#3cd));
 	color: #fff;
+	min-height: 680px;
 }
 
 #contact > div > h1 { color: #444; }
 
-input[type=text], input[type=email], textarea {
-	font-size: 1.4em;
-	padding: .2em;
+#form {
+	margin-top: 1em;
+}
+
+input, textarea {
+	font-size: 1.2em;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
 
+input, textarea {  
+    padding: 9px;  
+    border: solid 1px #ebebeb;  
+    outline: 0;   
+    width: 200px;  
+    background: #FFFFFF;  
+	box-shadow: inset rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: inset rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: inset rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {  
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 8px;  
+}
+
+textarea {  
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+}
+
+.actions input[type=submit] { 	
+    width: 150px; 
+    color: #eee; 
+    margin-top: 10px;
+    background-color: #18a5cc;
+    border: none;
+
+	-webkit-transition: -webkit-box-shadow 0.3s linear;
+
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#18a5cc), to(#0a85a8)); 
+	background:  -moz-linear-gradient(25% 75% 90deg,#0a85a8, #18a5cc); 
+
+}
+
+.actions input[type=submit]:hover {
+	-webkit-box-shadow: 0px 0px 8px #555;
+    -moz-box-shadow: 0px 0px 8px #555; 
+    box-shadow: 0px 0px 8px #555;		
+    cursor:  pointer;
+}
+
+
 .input {
 	margin-bottom: .5em;
 }
+
+
+.prev { display: none; }
