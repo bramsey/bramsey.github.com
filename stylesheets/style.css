@@ -28,11 +28,38 @@ a:visited { color: #00f; }
 	min-height: 768px;
 }
 
-#work {
-	background: #ebebeb;
+#about {
+	
+	background: url("../pics/0.JPG") no-repeat center center ; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	
+	//background: #f69;
+	
 	-moz-box-shadow: inset 0 0 5px 5px #888;
 	-webkit-box-shadow: inset 0 5px 5px #888;
+	box-shadow: inset 0 5px 5px #888;
+}
+
+#about > .container {
+	width: 27em;
+	padding-top: 4.5em;
+}
+
+#about > div > h1, #about > div > p {
+	color: #333;
+}
+
+#work {
+	background: #0f0;
+	-moz-box-shadow: inset 0 0 5px 5px #888, inset 0 -5px 5px #888;
+	-webkit-box-shadow: inset 0 5px 5px #888, inset 0 -5px 5px #888;
 	box-shadow: inset 0 5px 5px #888, inset 0 -5px 5px #888;
+	
+	
+	background: url("../pics/graph.png") repeat; 
 }
 
 #contact {
@@ -84,9 +111,8 @@ p {
 	padding: 24px;
 	float: left;
 	
-	-webkit-border-radius: 16px;
-	-moz-border-radius: 16px;
-	border-radius: 16px;
+	margin-right: 4em;
+
 	
 	box-shadow: 0 2px 2px #818181;
 	-webkit-box-shadow: 0 2px 2px #818181;
@@ -97,8 +123,11 @@ p {
 .project > p {
 	color: #444;
 	//display: none;
-	width: 27em;
 	margin: 1.5em;
+}
+
+p {
+	width: 27em;
 }
 
 h3 { margin-left: .75em; }
@@ -217,6 +246,7 @@ textarea {
 	-moz-border-radius: 12px;
 	border-radius: 12px;
 	cursor:  pointer;
+	color: #555;
 	
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ebebeb), to(#ccc)); 
 	background:  -moz-linear-gradient(25% 75% 90deg,#ebebeb, #ccc);
@@ -227,10 +257,10 @@ textarea {
 }
 
 .next {
-	right: -124px;
+	right: -34px;
 }
 
 
-//.prev { display: none; }
+.prev { display: none; }
 
 
