@@ -10,19 +10,27 @@
 	  <meta content='Bill Ramsey' name='author'>
 	  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 	  <meta name="google-site-verification" content="LDth4FAeTi5ynYwP8csfAByTMn3xI_YzDf83BuhkV0A" />
+	  <link href="./stylesheets/fontello.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="./stylesheets/style.css" media="all" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
 		<header id="hi">
 			<div class="container">  
-				<h1>Hi, I'm Bill!</h1>
+        <img src="pics/hsprofile.jpg"></img>
+        <h1>B<span style="color: #2daae1">i</span>ll R<span style="color: #2daae1">am</span>sey</h1>
 				<nav>
 					<ul id="#nav">
-						<li><a href="#about">Who am I?</a></li>
-						<li><a href="#work">What have I done?</a></li>
-						<li><a href="#contact">How to reach me.</a></li>
+            <li><i class="icon-user"></i><a href="#about">My story</a></li>
+            <li><i class="icon-ok"></i><a href="#work">Projects</a></li>
+            <li><i class="icon-wrench"></i><a href="#read">Explorations</a></li>
+            <li><i class="icon-book"></i><a href="#read">Favorite reads</a></li>
 					</ul>
 				</nav>
+        <ul class="icons">
+          <li><a class="btn" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
+          <li><a class="btn" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
+          <li><a class="btn" href="http://github.com/bramsey" target="_blank"><i class="icon-github-circled github"></i></a></li>
+        </ul>
 			</div>
 		</header>
 		<section id="about">
@@ -40,9 +48,6 @@
 			<div class="container">
 				<h1>My work.</h1>
 				<div id="projects">
-					<button class="prev"><</button>
-					<button class="next">></button>
-					<div class="carousel">
 						<ul>
 							<li id="first">
 								<div class="project">
@@ -72,26 +77,10 @@
 									<h3><a href="http://minifylist.com" target="_blank">check it out</a></h3>
 								</div>
 							</li>
-							<li id="last">
-								<div class="project">
-									<h2>Side Projects</h2>
-									<p>
-										View my work on <a target="_blank" href="https://github.com/bramsey">github</a>.
-									</p>
-								</div>
-							</li>
 						</ul>
-					</div>
 				</div>
 			</div>
 		</section>
-		<footer id="contact">
-			<div class="container">
-				<h1>Contact me.</h1>
-				<h3>bill @ billiamram.com</h3>
-				<h3><a href="http://twitter.com/billiamram" target="_blank">@billiamram</a></h3>
-			</div>
-		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
 		<script src="js/jcarousellite_1.0.1.min.js"></script>

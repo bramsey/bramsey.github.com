@@ -9,18 +9,19 @@ body {
 	background: #fff;
 }
 
-a:visited { color: #00f; }
+a:visited { color: #00e; }
 
 .container {
-	margin: auto;
-	//margin-top: .5em;
-	width: 720px;
+	margin-top: 1em;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;	
+  text-align: center;
 }
 
 #hi {
 	//-webkit-box-shadow: 8px 8px 8px #ccc;
+	margin: auto;
+	width: 720px;
 	z-index: 999;
 }
 
@@ -66,8 +67,14 @@ a:visited { color: #00f; }
 }
 
 nav {
-	width: 240px;
-	float: left;
+  clear: both;
+  margin: auto;
+  margin-bottom: 2em;
+  width: 231px;
+}
+
+nav ul {
+  margin-left: 10px;
 }
 
 li {
@@ -79,7 +86,7 @@ li {
 	font-family: 'helvetica neue', serif;
 }
 h1, h2, h3, h4, h5, h6 {
-	color: #444;
+	color: #222;
 	font-weight: 300;
 }
 
@@ -89,6 +96,7 @@ a {
 
 a:hover {
 	text-decoration: underline;
+  color: #333;
 }
 
 p { 
@@ -150,8 +158,10 @@ h1 {
 }
 
 #hi > div > h1 {
-	font-size: 9.96em;
-	margin-top: 100px;
+	font-size: 4.5em;
+	margin-top: 10px;
+  margin-left: -18px;
+  clear: both;
 }
 
 #work > div > h1 {
@@ -161,7 +171,12 @@ h1 {
 
 ul { 
 	list-style: none; 
-	margin-left: .6em;
+	margin-left: 5px;
+}
+
+li {
+  float: left;
+  margin-right: 1em;
 }
 
 
@@ -263,4 +278,33 @@ textarea {
 
 .prev { display: none; }
 
+.icons {
+  clear: both;
+  width: 212px;
+  margin: auto;
+  padding-left: 4em;
+}
 
+.icons li {
+  font-size: 32px;
+  float: left;
+  margin-right: 20px;
+}
+
+.icons i {
+  color: #222;
+}
+
+.email:hover { color: #f33; }
+.twitter:hover { color: #2daae1; }
+.github:hover { color: #3e3; }
+
+nav i {
+  margin-right: 4px;
+}
+
+img {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
