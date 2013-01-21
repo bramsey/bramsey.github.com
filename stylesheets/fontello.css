@@ -20,10 +20,10 @@
   text-align: center;
   opacity: 0.8;
 /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
+  //line-height: 1em;
 /* Animation center compensation - magrins should be symmetric */
 /* remove if not needed */
-/* margin-left: 0.2em; */
+//  margin-left: 0.2em;
 /* you can be more comfortable with increased icons size */
 /* font-size: 120%; */
 /* Uncomment for 3D effect */
@@ -31,19 +31,28 @@
 }
 
 .icon-home:before { content: '\2302'; } /* '⌂' */
+.icon-umbrella:before { content: '\2602'; } /* '☂' */
 .icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-flash:before { content: '\26a1'; } /* '⚡' */
 .icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-pencil:before { content: '\270e'; } /* '✎' */
 .icon-ok:before { content: '\2713'; } /* '✓' */
 .icon-info-circle:before { content: '\e705'; } /* '' */
+.icon-road:before { content: '\e78f'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-beaker:before { content: '\f0c3'; } /* '' */
 .icon-lightbulb:before { content: '\f0eb'; } /* '' */
+.icon-coffee:before { content: '\f0f4'; } /* '' */
+.icon-doc-alt:before { content: '\f0f6'; } /* '' */
 .icon-folder-open-empty:before { content: '\f115'; } /* '' */
 .icon-picture:before { content: '🌄'; } /* '\1f304' */
+.icon-gift:before { content: '🎁'; } /* '\1f381' */
 .icon-user:before { content: '👤'; } /* '\1f464' */
 .icon-briefcase:before { content: '💼'; } /* '\1f4bc' */
 .icon-book:before { content: '📕'; } /* '\1f4d5' */
+.icon-megaphone:before { content: '📣'; } /* '\1f4e3' */
 .icon-search:before { content: '🔍'; } /* '\1f50d' */
+.icon-key:before { content: '🔑'; } /* '\1f511' */
 .icon-link:before { content: '🔗'; } /* '\1f517' */
 .icon-wrench:before { content: '🔧'; } /* '\1f527' */

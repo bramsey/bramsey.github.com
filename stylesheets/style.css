@@ -21,7 +21,7 @@ a:visited { color: #00e; }
 #hi {
 	//-webkit-box-shadow: 8px 8px 8px #ccc;
 	margin: auto;
-	width: 720px;
+	width: 920px;
 	z-index: 999;
 }
 
@@ -69,7 +69,7 @@ a:visited { color: #00e; }
 nav {
   clear: both;
   margin: auto;
-  width: 231px;
+  width: 537px;
 }
 
 nav ul {
@@ -159,6 +159,7 @@ h1 {
 #hi > div > h1 {
 	font-size: 4.5em;
   margin-left: -18px;
+  margin-bottom: 10px;
   clear: both;
 }
 
@@ -280,6 +281,8 @@ textarea {
   clear: both;
   width: 212px;
   margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding-left: 4em;
 }
 
@@ -289,7 +292,7 @@ textarea {
   margin-right: 20px;
 }
 
-.icons li:last-child { margin-right: 0; }
+li:last-child { margin-right: 0; }
 
 .icons i {
   color: #222;
