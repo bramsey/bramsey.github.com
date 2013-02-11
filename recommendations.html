@@ -14,46 +14,50 @@
 	  <link href="./stylesheets/style.css" media="all" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
-		<header id="sidebar">
+		<header>
 			<div class="container">  
-        <img id="profile" src="pics/cartoon_color.png"></img>
+        <div id="profile">
+          <a href="/"><img src="pics/cartoon_color.png"></img></a>
+        </div>
         <h1>Bill Ramsey</h1>
-        <nav>
-          <ul id="#nav" class="group">
-            <li><i class="icon-user"></i><a href="#about">About me</a></li>
-            <li><i class="icon-ok"></i><a href="#work">My projects</a></li>
-            <li class="selected"><i class="icon-book"></i><a href="#read">Things I recommend</a></li>
-          </ul>
-        </nav>
         <ul class="icons group">
           <li><a class="btn" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
           <li><a class="btn" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
           <li><a class="btn" href="http://github.com/bramsey" target="_blank"><i class="icon-github github"></i></a></li>
         </ul>
+        <nav>
+          <ul id="#nav" class="group">
+            <li><a href="#about"><i class="icon-user"></i>About</a></li>
+            <li><a href="projects.html"><i class="icon-ok"></i>Projects</a></li>
+            <li class="selected"><a href="recommendations.html"><i class="icon-heart"></i>Books</a></li>
+          </ul>
+        </nav>
 			</div>
 		</header>
     <section id="recommendations">
-      <h1>Things I recommend</h2>
-      <div class="category">
-        <h2>Books</h2>
-        <ul>
-          <li><a href="#">Art of Doing Science and Engineering</a></li>
-          <li><a href="#">Structure and Interpretation of Computer Programs</a></li>
-          <li><a href="#">The Design of Everyday Things</a></li>
-          <li><a href="#">Understanding Comics</a></li>
-          <li><a href="#">Javascript: the Good Parts</a></li>
-          <li><a href="#">The Design of Everyday Things</a></li>
-        </ul>
-      </div>
-      <div class="category">
-        <h2>Essays</h2>
-        <ul>
-          <li><a href="http://www.aaronsw.com/weblog/productivity">HOWTO: Be more productive</a></li>
-          <li><a href="http://aphyr.com/posts/265-getting-started-in-software">Getting started in software</a></li>
-          <li><a href="http://sealedabstract.com/lifehacking/knowledge-the-sierpinski-triangle/">Knowledge: the sierpinski triangle</a></li>
-          <li><a href="http://www.43folders.com/2010/02/05/first-care">First, care</a></li>
-          <li><a href="http://norvig.com/21-days.html">Teach yourself programming in ten years</a></li>
-        </ul>
+      <div class="container">
+        <h1>Books I <i class="icon-heart"></i></h1>
+        <div class="category">
+          <h2>Thinking</h2>
+          <ul>
+            <li><a href="#">Art of Doing Science and Engineering</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h2>Programming</h2>
+          <ul>
+            <li><a href="#">Structure and Interpretation of Computer Programs</a></li>
+            <li><a href="#">Javascript: the Good Parts</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h2>Designing</h2>
+          <ul>
+            <li><a href="#">The Design of Everyday Things</a></li>
+            <li><a href="#">Understanding Comics</a></li>
+            <li><a href="#">Don't Make me Think</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
