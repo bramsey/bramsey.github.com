@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.screenshots img:not(.cover)').hide();
+    $('.card:not(.cover), .card-info').hide();
     $('.project-info').hide();
     $('.project').removeClass('maximized');
 	$(".carousel").jCarouselLite({
@@ -25,7 +25,7 @@ $(document).ready(function(){
   $('.project').bind('click', function(e) {
       $(this)
         .toggleClass('maximized')
-        .find('.project-info').toggle();
+        .find('.project-info, .card-info').toggle();
         //.find('img:not(.cover)').toggle();
 
         $('.project').not(this).toggle();

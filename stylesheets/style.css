@@ -97,11 +97,16 @@ a {
 	text-decoration: none;
 }
 
-.screenshots img {
+.card {
+  margin-bottom: 16px;
+  border: 4px solid #999;
+}
+
+.card img {
   width: 100%;
 }
 
-img.cover {
+.cover {
   display: block;
 }
 
@@ -128,12 +133,12 @@ img.cover {
   border: 1px solid #ccc;
 }
 
-.maximized .screenshots {
+.maximized .card img {
   float: left;
   width: 652px;
 }
 
-.maximized .project-info {
+.maximized .card-info {
   float: right;
   width: 298px;
 }
