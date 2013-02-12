@@ -25,13 +25,14 @@ $(document).ready(function(){
   $('.project').bind('click', function(e) {
       $(this)
         .toggleClass('maximized')
-        .find('.project-info, .card-info').toggle();
-        //.find('img:not(.cover)').toggle();
+        .hide()
+        .fadeIn('medium')
+        .find('.project-info, .card-info, .card:not(.cover)').toggle();
 
         $('.project').not(this).toggle();
   }).bind('mouseover', function(e) {
-      $(this).css({'border-color': '#222', 'cursor': 'pointer'});
+      $(this).css({ 'cursor': 'pointer'});
   }).bind('mouseout', function(e) {
-      $(this).css({'border-color': '#777', 'cursor': 'default'});
+      $(this).css({ 'cursor': 'default'});
   })
 });
