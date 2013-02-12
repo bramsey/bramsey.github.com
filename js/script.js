@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    $('.card:not(.cover), .card-info').hide();
-    $('.project-info').hide();
-    $('.project').removeClass('maximized');
 	$(".carousel").jCarouselLite({
         btnNext: ".next",
         btnPrev: ".prev",
@@ -22,17 +19,4 @@ $(document).ready(function(){
 	    }
     });
 
-  $('.project').bind('click', function(e) {
-      $(this)
-        .toggleClass('maximized')
-        .hide()
-        .fadeIn('medium')
-        .find('.project-info, .card-info, .card:not(.cover)').toggle();
-
-        $('.project').not(this).toggle();
-  }).bind('mouseover', function(e) {
-      $(this).css({ 'cursor': 'pointer'});
-  }).bind('mouseout', function(e) {
-      $(this).css({ 'cursor': 'default'});
-  })
 });
