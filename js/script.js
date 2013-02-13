@@ -31,10 +31,13 @@
         */
 
       $('.preview a').bind('click', maximizeClick);
-      $('#projects').delegate('.project', 'click', function(e) {
-          if ($(e.target).attr('class') === 'back') e.preventDefault();
-          $(this).hide();
-          $('.preview').fadeIn();
+      $('#projects').on('click', '.project', function(e) {
+          $(this).closest('.project').hide();
+          $('.preview').fadeIn('fast');
+
+          if ($(e.target).attr('class') === 'back') {
+              return false;
+          }
       });
 
     });
@@ -62,7 +65,7 @@
         e.preventDefault();
 
         loadProject(this, function($project) {
-            $project.fadeIn();
+            $project.fadeIn('fast');
             $('.preview').hide();
         });
     }
