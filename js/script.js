@@ -2,7 +2,7 @@
 
     $(window).bind('load', function() {
         var $projectsContainer = $('#projects > .container');
-        $('.preview a').each(function(i, link) {
+        $('.preview').each(function(i, link) {
             loadProject(link);
         });
     });
@@ -30,7 +30,7 @@
         });
         */
 
-      $('.preview a').bind('click', maximizeClick);
+      $('.preview').bind('click', maximizeClick);
       $('#projects').on('click', '.project', function(e) {
           $(this).closest('.project').hide();
           $('.preview').fadeIn('fast');
