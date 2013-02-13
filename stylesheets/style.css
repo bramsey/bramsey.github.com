@@ -112,7 +112,7 @@ a {
   background: #fff;
 }
 
-.project > a > img {
+.preview img {
   width: 100%;
 }
 
@@ -123,27 +123,32 @@ a {
   display: block;
 }
 
-.project {
+.preview {
+  border: 2px solid #ccc;
+}
+
+.project, .preview {
   margin-bottom: 20px;
   width: 316px;
   height: 282px;
   margin-left: 16px;
   margin-bottom: 16px;
   float: left;
-  border: 2px solid #aaa;
   background: #fff;
 }
 
 .maximized {
-  width: 988px;
+  width: 992px;
   //height: 584px;
   height: inherit;
-	background: url("../pics/textures/60degree_gray.png"); 
+  background-color: #f8f5e1;
+	//background: url("../pics/textures/crisp_paper_ruffles.png"); 
 }
 
 .project-info {
   //background: #ebebeb;
   padding: 16px;
+  margin-bottom: 16px;
 }
 
 .maximized .card {
@@ -162,7 +167,7 @@ a {
   //height: 100%;
 }
 
-.project, .maximized .card img, .maximized .card {
+.preview, .project, .maximized .card img, .maximized .card {
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
