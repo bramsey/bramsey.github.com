@@ -2,7 +2,6 @@
 
     $(window).bind('load', function() {
         var $projectsContainer = $('#projects > .container');
-        console.log('window loaded');
         $('.preview a').each(function(i, link) {
             loadProject(link);
         });
@@ -33,6 +32,7 @@
 
       $('.preview a').bind('click', maximizeClick);
       $('#projects').delegate('.project', 'click', function(e) {
+          if ($(e.target).attr('class') === 'back') e.preventDefault();
           $(this).hide();
           $('.preview').fadeIn();
       });
@@ -53,7 +53,6 @@
                 if (callback) callback($project);
             });
         } else {
-            console.log('already inserted' + link.href);
             $project = $('#' + projectId);
             if (callback) callback($project);
         }
