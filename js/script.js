@@ -1,5 +1,15 @@
 !function ($) {
+
+    $(window).bind('load', function() {
+        var $projectsContainer = $('#projects > .container');
+        console.log('window loaded');
+        $('.preview a').each(function(i, link) {
+            loadProject(link);
+        });
+    });
+
     $(function () {
+        /*
       $(".carousel").jCarouselLite({
             btnNext: ".next",
             btnPrev: ".prev",
@@ -19,6 +29,7 @@
           }
           }
         });
+        */
 
       $('.preview a').bind('click', maximizeClick);
       $('#projects').delegate('.project', 'click', function(e) {
@@ -28,27 +39,32 @@
 
     });
 
-    function maximizeClick(e) {
-        var that = this, projectId, $project;
+    function loadProject(link, callback) {
+        var $project,
+            projectId = $(link).attr('data-project-id');
 
+        if (projectId === undefined) {
+            $.get(link.href, function(result) {
+                $project = $(result).find('.project');
+                $project.css('cursor', 'pointer');
+                $project.hide();
+                $(link).closest('.container').append($project);
+                $(link).attr('data-project-id', $project.attr('id'));
+                if (callback) callback($project);
+            });
+        } else {
+            console.log('already inserted' + link.href);
+            $project = $('#' + projectId);
+            if (callback) callback($project);
+        }
+    }
+
+    function maximizeClick(e) {
         e.preventDefault();
 
-        projectId = $(that).attr('data-project-id');
-        console.log(projectId);
-
-        if (projectId) { 
-            $project = $('#' + projectId);
+        loadProject(this, function($project) {
             $project.fadeIn();
-        } else {
-            $.get(that.href, function(data) {
-                $project = $(data).find('.project');
-                $project.hide();
-                $(that).attr('data-project-id', $project.attr('id'));
-                $project.css('cursor', 'pointer');
-                $(that).closest('.container').append($project);
-                $project.fadeIn();
-            });
-        }
-        $('.preview').hide();
+            $('.preview').hide();
+        });
     }
 }(window.jQuery);
