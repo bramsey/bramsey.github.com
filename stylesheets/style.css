@@ -156,9 +156,11 @@ a {
   //margin-bottom: 16px;
   //height: 443px;
   height: inherit;
-  width: 956px;
+  //width: 924px;
+  width: inherit;
+  display: inline-block;
+  margin-left: 16px;
 	background: url("../pics/textures/linedpaper.png"); 
-  margin: auto;
   margin-bottom: 16px;
 }
 
