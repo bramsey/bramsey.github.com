@@ -1,0 +1,19 @@
+.project, .preview {
+  width: 316px;
+  height: 282px;
+}
+
+.maximized {
+  width: 992px;
+  height: inherit;
+}
+
+.maximized .card img {
+  float: left;
+  max-width: 636px;
+}
+
+.maximized .card-info {
+  float: left;
+  width: 282px;
+}
