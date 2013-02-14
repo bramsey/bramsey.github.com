@@ -1,0 +1,38 @@
+.project, .preview {
+  margin-bottom: 20px;
+  width: 284px;
+  height: 282px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  float: left;
+  background: #fff;
+}
+
+.maximized {
+  width: 288px;
+  height: inherit;
+  background-color: #f8f5e1;
+}
+
+.maximized .card {
+  //margin-bottom: 16px;
+  //height: 443px;
+  height: inherit;
+  //width: 924px;
+  width: inherit;
+  display: inline-block;
+  margin-left: 16px;
+	background: url("../pics/textures/lined_paper.png"); 
+  margin-bottom: 16px;
+}
+
+.maximized .card img {
+  float: none;
+  max-width: 256px;
+}
+
+.maximized .card-info {
+  float: none;
+  padding: 16px;
+  width: 224px;
+}
