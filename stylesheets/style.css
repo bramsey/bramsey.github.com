@@ -26,6 +26,10 @@ nav a:hover {
   text-decoration: none;
 }
 
+p {
+  line-height: 24px;
+}
+
 .container {
   padding-top: 62px;
   //margin: auto;
@@ -79,9 +83,9 @@ nav li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #222;
-	font-weight: 300;
-  margin-bottom: .5em;
+	color: #333;
+	font-weight: 500;
+  margin-bottom: 12px;
 }
 
 h1, h1 i {
