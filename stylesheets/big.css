@@ -17,3 +17,9 @@
   float: left;
   width: 369px;
 }
+
+.container {
+  margin: auto;
+  width: 1280px;
+  padding-top: 45px;
+}

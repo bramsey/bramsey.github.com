@@ -7,8 +7,8 @@ html {overflow-y: scroll;}
 }
 
 body {
-	background: #ddd;
-	background: url("../pics/textures/escheresque.png"); 
+	//background: #eb770a;
+	background: url("../pics/textures/gplay.png"); 
 }
 
 a:hover {
@@ -35,7 +35,6 @@ p {
   //margin: auto;
   //width: 90%;
   margin-left: 16px;
-
 }
 
 #hi .container {
@@ -129,7 +128,7 @@ a {
 }
 
 .preview {
-  border: 2px solid #ccc;
+  border: 2px solid #999;
 }
 
 .project, .preview {
@@ -190,9 +189,11 @@ a {
 header {
   height: 44px;
   top: 0;
-  background: #ebebeb;
+  background: #777;
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #333;
+  background: #333;
+	//background: url("../pics/textures/irongrip.png"); 
 }
 
 header h1 {
