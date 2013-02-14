@@ -26,14 +26,16 @@
 
       // Escape maximized project back to the main page.
       $('#projects').on('click', '.project', function(e) {
-          $(this).closest('.project').hide();
-          $('.preview').fadeIn('fast');
+        var $project = $(this).closest('.project');
+        $project.hide();
+        $('.preview').fadeIn('fast');
 
-          window.history.pushState(null, null, "projects.html");
+        $.scrollTo($('.preview[data-project-id*=' + $project.attr('id') + ']').offset().top - 16);
+        window.history.pushState(null, null, "projects.html");
 
-          if ($(e.target).attr('class') === 'back') {
-              return false;
-          }
+        if ($(e.target).attr('class') === 'back') {
+          return false;
+        }
       });
 
     });
@@ -63,6 +65,8 @@
         loadProject(this, function($project) {
             $project.fadeIn('fast');
             $('.preview').hide();
+            //$.scrollTo($project);
+            $.scrollTo(0);
             window.history.pushState(null, null, "projects.html#" + $project.attr('id'));
         });
     }

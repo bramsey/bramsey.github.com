@@ -18,7 +18,7 @@ a:hover {
 
 nav a:visited { color: #00e; }
 
-nav a {
+nav a, .preview {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -31,7 +31,7 @@ p {
 }
 
 .container {
-  padding-top: 62px;
+  padding-top: 18px;
   //margin: auto;
   //width: 90%;
   margin-left: 16px;
@@ -188,7 +188,6 @@ a {
 
 
 header {
-  position: fixed;
   height: 44px;
   top: 0;
   background: #ebebeb;
