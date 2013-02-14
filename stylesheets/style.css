@@ -34,7 +34,9 @@ p {
   padding-top: 18px;
   //margin: auto;
   //width: 90%;
-  margin-left: 16px;
+  //margin-left: 16px;
+  margin: auto;
+  width: 1008px;
 }
 
 #hi .container {
@@ -113,7 +115,7 @@ a {
 
 .card {
   width: 100%;
-  background: #fff;
+  background-color: #fff;
 }
 
 .preview img {
