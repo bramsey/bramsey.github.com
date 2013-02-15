@@ -7,8 +7,9 @@ html {overflow-y: scroll;}
 }
 
 body {
-	//background: #eb770a;
-	background: url("../pics/textures/gplay.png"); 
+	/background: #eb770a;
+  background: #ccc;
+	//background: url("../pics/textures/gplay.png"); 
 }
 
 a:hover {
@@ -115,14 +116,11 @@ a {
 
 .card {
   width: 100%;
-  background-color: #fff;
+  background-color: #ebebeb;
 }
 
 .preview img {
   width: 100%;
-}
-
-.card-info {
 }
 
 .cover {
@@ -130,7 +128,9 @@ a {
 }
 
 .preview {
-  border: 2px solid #999;
+  //border: 1px solid #999;
+  border-bottom: 2px solid #999;
+
 }
 
 .project, .preview {
@@ -147,14 +147,15 @@ a {
   width: 992px;
   //height: 584px;
   height: inherit;
-  background-color: #f8f5e1;
+  background: #ccc;
+  //background-color: #f8f5e1;
 	//background: url("../pics/textures/crisp_paper_ruffles.png"); 
 }
 
 .project-info {
   //background: #ebebeb;
-  padding: 16px;
-  margin-bottom: 16px;
+  //padding: 16px;
+  margin-bottom: 32px;
 }
 
 .maximized .card {
@@ -164,27 +165,26 @@ a {
   //width: 924px;
   width: inherit;
   display: inline-block;
-  margin-left: 16px;
-	background: url("../pics/textures/lined_paper.png"); 
-  margin-bottom: 16px;
+	//background: url("../pics/textures/lined_paper.png"); 
+  margin-bottom: 32px;
 }
 
 .maximized .card img {
   float: left;
-  max-width: 636px;
+  max-width: 657px;
   //height: 100%;
 }
 
-.preview, .project, .maximized .card img, .maximized .card {
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
-}
+//.preview, .project, .maximized .card img, .maximized .card {
+	//-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
+	//box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
+	//-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
+//}
 
 .maximized .card-info {
   float: right;
   padding: 16px;
-  width: 282px;
+  width: 293px;
 }
 
 
@@ -194,7 +194,7 @@ header {
   background: #777;
   width: 100%;
   border-bottom: 1px solid #333;
-  background: #333;
+  background: #666;
 	//background: url("../pics/textures/irongrip.png"); 
 }
 
@@ -285,7 +285,7 @@ nav i {
 
 }
 
-#profile img, .btn {
+#profile img, .btn, .maximized, .card {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;

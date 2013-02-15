@@ -10,12 +10,12 @@
 
 .maximized .card img {
   float: none;
-  max-width: 256px;
+  max-width: 288px;
 }
 
 .maximized .card-info {
   float: none;
-  width: 224px;
+  width: 256px;
 }
 
 .container {
