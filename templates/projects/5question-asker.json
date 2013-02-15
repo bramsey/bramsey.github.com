@@ -1,0 +1,29 @@
+{
+  "id": "question-asker",
+  "title": "Question Asker",
+  "demo_url": "http://billiamram.com/question-asker",
+  "description": "Efficiently answer yes or no questions about a list of stuff.",
+  "cover_url": "assets/pics/question2.png",
+  "cards": [
+    {
+      "title": "List Input Screen",
+      "description": "The initial screen for the tool. The description of purpose and area for action is presented clearly.",
+      "img_url": "assets/pics/question2.png"
+    },
+    {
+      "title": "Question Input Screen",
+      "description": "Where the user specifies the yes or no question. Clicking the button or hitting enter will advance to the next screen.",
+      "img_url": "assets/pics/question3.png"
+    },
+    {
+      "title": "Question Answering Screen",
+      "description": "The user is shown the question, the item currently the subject of the question, the actions used for answering the question, and the instructions for keyboard hotkeys. Undo will reverse the previous answer, allowing the user to quickly answer the question and go back if they think their answer was incorrect. The page is streamlined to make answering the question as fast as possible.",
+      "img_url": "assets/pics/question4.png"
+    },
+    {
+      "title": "Results",
+      "description": "The results screen shows the list of items split into the yes or no categories. The lists are in text areas for easy copying by the user.",
+      "img_url": "assets/pics/question5.png"
+    }
+  ]
+}

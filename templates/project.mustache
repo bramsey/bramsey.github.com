@@ -1,0 +1,25 @@
+<section id="projects">
+  <div class="container group">
+    <div id="{{project.id}}" class="maximized project">
+      <div class="project-info">
+        <a class="back" href="projects.html">Back</a>
+        <h2>{{project.title}}</h2>
+        {{#project.demo_url}}
+        <h3><a href="{{project.demo_url}}" target="_blank">Try it out</a></h3>
+        {{/project.demo_url}}
+        <p>{{project.description}}</p>
+      </div>
+      <div class="cards">
+        {{#project.cards}}
+        <div class="card group cover">
+          <img src="{{img_url}}" alt="{{title}}"></img>
+          <div class="card-info">
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+          </div>
+        </div>
+        {{/project.cards}}
+      </div>
+    </div>
+  </div>
+</section>

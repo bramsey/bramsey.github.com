@@ -1,0 +1,24 @@
+{
+  "id": "privacy-parrot",
+  "title": "Privacy Parrot",
+  "demo_url": "http://privacyparrot.com",
+  "description": "A tool that analyzes privacy policies with artificial intelligence to determine if a site can share your personal information.",
+  "cover_url": "assets/pics/privacy_parrot1.png",
+  "cards": [
+    {
+      "title": "Landing Page",
+      "description": "The mascot, the title, the value proposition, and the main action of the site are all front and center. Every section of the site can be found clearly and unobtrusively.",
+      "img_url": "assets/pics/privacy_parrot1.png"
+    },
+    {
+      "title": "Popular Policies",
+      "description": "The list of most frequently visited policy pages. The results for a search query that matches multiple policies also uses this format. Search and navigationare now at the top of the site with a diminished focus, but are still easy to find.",
+      "img_url": "assets/pics/privacy_parrot2.png"
+    },
+    {
+      "title": "Policy Page",
+      "description": "Displays the classification information for the requested site. The classification is most prominent, but links to the site, its privacy policy, and a correction form are easily available.",
+      "img_url": "assets/pics/privacy_parrot3.png"
+    }
+  ]
+}

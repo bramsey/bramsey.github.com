@@ -1,0 +1,34 @@
+{
+  "id": "prioritizer",
+  "title": "Prioritizer",
+  "demo_url": "http://billiamram.com/prioritizer",
+  "description": "Quickly prioritize a list of stuff. Infers ordering based on prior input so you never have to compare two things twice.",
+  "cover_url": "assets/pics/prioritizer1.png",
+  "cards": [
+    {
+      "title": "List Input Screen",
+      "description": "The initial screen for the tool. The description of purpose and area for action is presented clearly.",
+      "img_url": "assets/pics/prioritizer1.png"
+    },
+    {
+      "title": "Ranking Screen",
+      "description": "The whole page where ranking takes place.",
+      "img_url": "assets/pics/prioritizer2.png"
+    },
+    {
+      "title": "Ranking Widget",
+      "description": "The two items being compared are presented here. The buttons to perform the comparison are clearly visible, and instructions for hotkeys are provided so the mouse is not needed to compare items. After an action, an undo button appears that allows the user to reverse the last comparison, returning the tool to its previous state.",
+      "img_url": "assets/pics/prioritizer3.png"
+    },
+    {
+      "title": "Ranking Lists",
+      "description": "The lists of unranked and ranked items updates as the user makes each comparison. Not every comparison will result in a final ranking. Undo affects the ranking lists as well.",
+      "img_url": "assets/pics/prioritizer4.png"
+    },
+    {
+      "title": "Results",
+      "description": "After all items have been ranked, the ordered list appears in a text area for easy copying by the user.",
+      "img_url": "assets/pics/prioritizer5.png"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "lock-screen-maker",
+  "title": "Lock Screen Maker",
+  "demo_url": "http://billiamram.com/lock-screen-maker",
+  "description": "Quickly save messages to the iPhone lock-screen by generating a perfectly sized image from inputted text.",
+  "cover_url": "assets/pics/locker3.png",
+  "cards": [
+    {
+      "title": "Main Screen",
+      "description": "The first screen the user sees upon visiting the site. It is formatted as a mobile web app, so it hides the browser bar and is suitable for saving as an app in iOS.",
+      "img_url": "assets/pics/locker1.png"
+    },
+    {
+      "title": "Text Input",
+      "description": "When the user enters some text, an unopened color-selector appears. The default color for final text is black.",
+      "img_url": "assets/pics/locker2.png"
+    },
+    {
+      "title": "Color Selection",
+      "description": "Upon clicking the color selector, the various color options slide out to the right. The selected color receives an outline.",
+      "img_url": "assets/pics/locker3.png"
+    },
+    {
+      "title": "Screen Image",
+      "description": "After hitting the show button, the screen changes to display the given text as large as possible with the specified color such that it will fit perfectly in between the bars on an iPhone lock screen. From here the user needs to take a screen shot, then set the screen shot as their lock screen from the camera roll.",
+      "img_url": "assets/pics/locker4.png"
+    }
+  ]
+}
