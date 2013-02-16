@@ -22,11 +22,11 @@ h1, h1 i {
   font-size: 36px;
 }
 
-h2 {
+h2, h2 i {
   font-size: 24px;
 }
 
-h3 {
+h3, h3 i {
   font-size: 20px;
 }
 
@@ -58,6 +58,9 @@ ul {
 .social {
   float: left;
   padding-left: 16px;
+  margin-top: 0;
+  /** magic number **/
+  line-height: 44px;
 }
 
 .social__item {
@@ -66,7 +69,7 @@ ul {
 .social__item:last-child { margin-right: 0; }
 
 .social i {
-  color: #222;
+  color: #333;
 }
 
 .icon-mail:hover { color: #f33; }
@@ -130,15 +133,26 @@ ul {
   display: none;
 }
 
+.site-nav {
+  display: inline-block;
+  float: right;
+  /** magic number **/
+  line-height: 44px;
+}
+
 .site-nav__link, .project-previews__preview {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.site-nav__link {
+  height: 100%;
 }
 
 .site-nav__link:hover {
   text-decoration: none;
 }
 
-.site-nav__link .selected, .site-nav__link .selected:visited {
+.site-nav__link.selected, .site-nav__link.selected:visited {
   color: #333;
 }
 
