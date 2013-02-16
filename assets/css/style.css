@@ -36,7 +36,7 @@ a {
 
 a:hover {
 	text-decoration: underline;
-  color: #333;
+  color: #36e;
 }
 
 ul { 
@@ -56,20 +56,21 @@ ul {
 }
 
 .social {
-  float: left;
-  padding-left: 16px;
-  margin-top: 0;
+  padding-left: 0px;
+  margin: auto;
+  display: inline-block;
   /** magic number **/
-  line-height: 44px;
 }
 
 .social__item {
   display: inline-block;
+  margin-right: 1em;
 }
+
 .social__item:last-child { margin-right: 0; }
 
 .social i {
-  color: #333;
+  color: #ccc;
 }
 
 .icon-mail:hover { color: #f33; }
@@ -110,7 +111,7 @@ ul {
 /** Site header **/
 .site-header {
   height: 44px;
-  background: #666;
+  background: #333;
   margin-bottom: 18px;
 	//background: url("../pics/textures/irongrip.png"); 
 }
@@ -146,14 +147,21 @@ ul {
 
 .site-nav__link {
   height: 100%;
+  margin-right: .5em;
+  color: #ccc;
 }
+
+.site-nav__link:last-of-type { margin-right: 0; }
 
 .site-nav__link:hover {
   text-decoration: none;
+  color: #36e;
 }
 
 .site-nav__link.selected, .site-nav__link.selected:visited {
-  color: #333;
+  color: #ccc;
+  border-bottom: 9px solid #ccc;
+  padding-bottom: 4px;
 }
 
 
@@ -164,7 +172,7 @@ ul {
 
 .project-previews__preview {
   border-bottom: 2px solid #999;
-  width: 316px;
+  width: 288px;
   height: 282px;
   margin-left: 16px;
   margin-bottom: 16px;
@@ -184,13 +192,17 @@ ul {
 }
 
 .project__info {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .project__cards__card {
   background-color: #ebebeb;
   display: inline-block;
   margin-bottom: 32px;
+}
+
+.project__cards__card:last-of-type {
+  margin-bottom: 16px;
 }
 
 .project__cards__card__img {
@@ -200,6 +212,14 @@ ul {
 .project__cards__card__info {
   padding: 16px;
   width: 256px;
+}
+
+/** Footer **/
+.site-footer {
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background: #333;
 }
 
 
