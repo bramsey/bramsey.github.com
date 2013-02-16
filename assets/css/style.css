@@ -17,7 +17,7 @@ a:hover {
   color: #333;
 }
 
-nav a, .preview {
+nav a, .project-previews__preview {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -27,7 +27,7 @@ nav a:hover {
 
 .container {
   margin: auto;
-  width: 1008px;
+  width: 288px;
 }
 
 nav {
@@ -63,7 +63,11 @@ a {
 	text-decoration: none;
 }
 
-#projects {
+.page-header {
+  margin-bottom: 18px;
+}
+
+.project-previews {
   margin-left: -16px;
 }
 
@@ -76,21 +80,15 @@ a {
   background-color: #ebebeb;
 }
 
-.preview img {
+.preview-img {
   width: 100%;
 }
 
-.cover {
-  display: block;
-}
-
-.preview {
+.project-previews__preview {
   border-bottom: 2px solid #999;
-
 }
 
-.project, .preview {
-  margin-bottom: 20px;
+.project-previews__preview {
   width: 316px;
   height: 282px;
   margin-left: 16px;
@@ -99,13 +97,10 @@ a {
   background: #fff;
 }
 
-.maximized {
-  width: 992px;
-  //height: 584px;
-  height: inherit;
+.project {
+  width: 288px;
   background: #ccc;
   //background-color: #f8f5e1;
-	//background: url("../pics/textures/crisp_paper_ruffles.png"); 
 }
 
 .project-info {
@@ -129,11 +124,9 @@ a {
   //height: 100%;
 }
 
-//.preview, .project, .maximized .card img, .maximized .card {
 	//-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
 	//box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
 	//-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
-//}
 
 .maximized .card-info {
   float: right;

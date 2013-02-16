@@ -20,7 +20,7 @@
 	  <link href="assets/css/mobile-portrait.css" media="only screen and (max-width : 320px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
-		<header>
+		<header class="page-header">
 			<div class="container">  
         <div id="profile">
           <a href="/"><img src="assets/pics/cartoon_color.png"></img></a>
@@ -39,48 +39,46 @@
         </nav>
 			</div>
 		</header>
-    <section id="projects">
-      <div class="container group">
-        <div id="lock-screen-maker" class="maximized project">
-          <div class="project-info">
-            <a class="back" href="projects.html">Back</a>
-            <h2>Lock Screen Maker</h2>
-            <h3><a href="http://billiamram.com/lock-screen-maker" target="_blank">Try it out</a></h3>
-        <p>Quickly save messages to the iPhone lock-screen by generating a perfectly sized image from inputted text.</p>
-          </div>
-          <div class="cards">
-            <div class="card group cover">
-              <img src="assets/pics/locker1.png" alt="Main Screen"></img>
-              <div class="card-info">
-                <h3>Main Screen</h3>
-                <p>The first screen the user sees upon visiting the site. It is formatted as a mobile web app, so it hides the browser bar and is suitable for saving as an app in iOS.</p>
-              </div>
-            </div>
-        <div class="card group cover">
-              <img src="assets/pics/locker2.png" alt="Text Input"></img>
-              <div class="card-info">
-                <h3>Text Input</h3>
-                <p>When the user enters some text, an unopened color-selector appears. The default color for final text is black.</p>
-              </div>
-            </div>
-        <div class="card group cover">
-              <img src="assets/pics/locker3.png" alt="Color Selection"></img>
-              <div class="card-info">
-                <h3>Color Selection</h3>
-                <p>Upon clicking the color selector, the various color options slide out to the right. The selected color receives an outline.</p>
-              </div>
-            </div>
-        <div class="card group cover">
-              <img src="assets/pics/locker4.png" alt="Screen Image"></img>
-              <div class="card-info">
-                <h3>Screen Image</h3>
-                <p>After hitting the show button, the screen changes to display the given text as large as possible with the specified color such that it will fit perfectly in between the bars on an iPhone lock screen. From here the user needs to take a screen shot, then set the screen shot as their lock screen from the camera roll.</p>
-              </div>
-            </div>
-      </div>
+    <div class="container">
+      <div id="lock-screen-maker" class="project">
+        <div class="project-info">
+          <a class="back" href="projects.html">Back</a>
+          <h2>Lock Screen Maker</h2>
+          <h3><a href="http://billiamram.com/lock-screen-maker" target="_blank">Try it out</a></h3>
+    <p>Quickly save messages to the iPhone lock-screen by generating a perfectly sized image from inputted text.</p>
         </div>
+        <div class="cards">
+          <div class="card group">
+            <img src="assets/pics/locker1.png" alt="Main Screen"></img>
+            <div class="card-info">
+              <h3>Main Screen</h3>
+              <p>The first screen the user sees upon visiting the site. It is formatted as a mobile web app, so it hides the browser bar and is suitable for saving as an app in iOS.</p>
+            </div>
+          </div>
+    <div class="card group">
+            <img src="assets/pics/locker2.png" alt="Text Input"></img>
+            <div class="card-info">
+              <h3>Text Input</h3>
+              <p>When the user enters some text, an unopened color-selector appears. The default color for final text is black.</p>
+            </div>
+          </div>
+    <div class="card group">
+            <img src="assets/pics/locker3.png" alt="Color Selection"></img>
+            <div class="card-info">
+              <h3>Color Selection</h3>
+              <p>Upon clicking the color selector, the various color options slide out to the right. The selected color receives an outline.</p>
+            </div>
+          </div>
+    <div class="card group">
+            <img src="assets/pics/locker4.png" alt="Screen Image"></img>
+            <div class="card-info">
+              <h3>Screen Image</h3>
+              <p>After hitting the show button, the screen changes to display the given text as large as possible with the specified color such that it will fit perfectly in between the bars on an iPhone lock screen. From here the user needs to take a screen shot, then set the screen shot as their lock screen from the camera roll.</p>
+            </div>
+          </div>
+  </div>
       </div>
-    </section>
+    </div>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollTo-1.4.2-min.js"></script>
 		<script src="assets/js/script.js"></script>

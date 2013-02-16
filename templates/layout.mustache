@@ -20,7 +20,7 @@
 	  <link href="assets/css/mobile-portrait.css" media="only screen and (max-width : 320px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
-		<header>
+		<header class="page-header">
 			<div class="container">  
         <div id="profile">
           <a href="/"><img src="assets/pics/cartoon_color.png"></img></a>
@@ -39,7 +39,9 @@
         </nav>
 			</div>
 		</header>
-    {{>body}}
+    <div class="container">
+      {{>body}}
+    </div>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollTo-1.4.2-min.js"></script>
 		<script src="assets/js/script.js"></script>

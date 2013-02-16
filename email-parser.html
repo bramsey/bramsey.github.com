@@ -20,7 +20,7 @@
 	  <link href="assets/css/mobile-portrait.css" media="only screen and (max-width : 320px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
-		<header>
+		<header class="page-header">
 			<div class="container">  
         <div id="profile">
           <a href="/"><img src="assets/pics/cartoon_color.png"></img></a>
@@ -39,34 +39,32 @@
         </nav>
 			</div>
 		</header>
-    <section id="projects">
-      <div class="container group">
-        <div id="email-parser" class="maximized project">
-          <div class="project-info">
-            <a class="back" href="projects.html">Back</a>
-            <h2>Flexible Email Parser</h2>
-            <h3><a href="http://billiamram.com/email-parser" target="_blank">Try it out</a></h3>
-        <p>Finds email addresses in a blob of inputted text and formats the results for use in sending an email.</p>
-          </div>
-          <div class="cards">
-            <div class="card group cover">
-              <img src="assets/pics/email1.png" alt="Text Input Screen."></img>
-              <div class="card-info">
-                <h3>Text Input Screen.</h3>
-                <p>The initial state of the page. Purpose and instructions are clearly presented with the placeholder of the text area input.</p>
-              </div>
-            </div>
-        <div class="card group cover">
-              <img src="assets/pics/email2.png" alt="Results"></img>
-              <div class="card-info">
-                <h3>Results</h3>
-                <p>If any email addresses are found in the blob of text, they appear in a formatted list in a new text area below the original. Upon clicking the new text area, its text becomes selected, making it easier to then copy the text for use in an email client.</p>
-              </div>
-            </div>
-      </div>
+    <div class="container">
+      <div id="email-parser" class="project">
+        <div class="project-info">
+          <a class="back" href="projects.html">Back</a>
+          <h2>Flexible Email Parser</h2>
+          <h3><a href="http://billiamram.com/email-parser" target="_blank">Try it out</a></h3>
+    <p>Finds email addresses in a blob of inputted text and formats the results for use in sending an email.</p>
         </div>
+        <div class="cards">
+          <div class="card group">
+            <img src="assets/pics/email1.png" alt="Text Input Screen."></img>
+            <div class="card-info">
+              <h3>Text Input Screen.</h3>
+              <p>The initial state of the page. Purpose and instructions are clearly presented with the placeholder of the text area input.</p>
+            </div>
+          </div>
+    <div class="card group">
+            <img src="assets/pics/email2.png" alt="Results"></img>
+            <div class="card-info">
+              <h3>Results</h3>
+              <p>If any email addresses are found in the blob of text, they appear in a formatted list in a new text area below the original. Upon clicking the new text area, its text becomes selected, making it easier to then copy the text for use in an email client.</p>
+            </div>
+          </div>
+  </div>
       </div>
-    </section>
+    </div>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollTo-1.4.2-min.js"></script>
 		<script src="assets/js/script.js"></script>
