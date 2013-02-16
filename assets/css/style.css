@@ -49,12 +49,6 @@ ul {
   width: 288px;
 }
 
-.btn, .project__cards__card {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-}
-
 .social {
   padding-left: 0px;
   margin: auto;
@@ -188,7 +182,6 @@ ul {
 /** Projects **/
 .project {
   width: 288px;
-  background: #ccc;
 }
 
 .project__info {
@@ -199,6 +192,9 @@ ul {
   background-color: #ebebeb;
   display: inline-block;
   margin-bottom: 32px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }
 
 .project__cards__card:last-of-type {
