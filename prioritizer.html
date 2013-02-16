@@ -12,73 +12,65 @@
 	  <link href="assets/css/normalize.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="assets/css/fontello.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/big.css" media="only screen and (min-width : 1280px)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/tablet-portrait.css" media="only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/tablet-landscape.css" media="only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/iphone5-landscape.css" media="only screen and (min-width : 480px) and (max-width : 568px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/mobile-landscape.css" media="only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/mobile-portrait.css" media="only screen and (max-width : 320px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
-		<header class="page-header">
-			<div class="container">  
+		<header class="site-header">
+			<div class="container group">  
         <div id="profile">
           <a href="/"><img src="assets/pics/cartoon_color.png"></img></a>
         </div>
-        <h1>Bill Ramsey</h1>
+        <h1 class="my-name">Bill Ramsey</h1>
         <ul class="icons group">
-          <li><a class="btn" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
-          <li><a class="btn" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
-          <li><a class="btn" href="http://github.com/bramsey" target="_blank"><i class="icon-github github"></i></a></li>
+          <li><a class="" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
+          <li><a class="" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
+          <li><a class="" href="http://github.com/bramsey" target="_blank"><i class="icon-github github"></i></a></li>
         </ul>
-        <nav>
-          <ul id="#nav" class="group">
-            <li class=""><a href="#about"><i class="icon-user"></i>About</a></li>
-            <li class="selected"><a href="projects.html"><i class="icon-ok"></i>Projects</a></li>
-          </ul>
+        <nav class="site-nav">
+          <a href="about.html" class="site-nav__link "><i class="icon-user"></i>About</a>
+          <a href="projects.html" class="site-nav__link selected"><i class="icon-ok"></i>Projects</a>
         </nav>
 			</div>
 		</header>
     <div class="container">
       <div id="prioritizer" class="project">
-        <div class="project-info">
+        <div class="project__info group">
           <a class="back" href="projects.html">Back</a>
           <h2>Prioritizer</h2>
           <h3><a href="http://billiamram.com/prioritizer" target="_blank">Try it out</a></h3>
     <p>Quickly prioritize a list of stuff. Infers ordering based on prior input so you never have to compare two things twice.</p>
         </div>
-        <div class="cards">
-          <div class="card group">
-            <img src="assets/pics/prioritizer1.png" alt="List Input Screen"></img>
-            <div class="card-info">
+        <div class="project__cards">
+          <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/prioritizer1.png" alt="List Input Screen"></img>
+            <div class="project__cards__card__info">
               <h3>List Input Screen</h3>
               <p>The initial screen for the tool. The description of purpose and area for action is presented clearly.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/prioritizer2.png" alt="Ranking Screen"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/prioritizer2.png" alt="Ranking Screen"></img>
+            <div class="project__cards__card__info">
               <h3>Ranking Screen</h3>
               <p>The whole page where ranking takes place.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/prioritizer3.png" alt="Ranking Widget"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/prioritizer3.png" alt="Ranking Widget"></img>
+            <div class="project__cards__card__info">
               <h3>Ranking Widget</h3>
               <p>The two items being compared are presented here. The buttons to perform the comparison are clearly visible, and instructions for hotkeys are provided so the mouse is not needed to compare items. After an action, an undo button appears that allows the user to reverse the last comparison, returning the tool to its previous state.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/prioritizer4.png" alt="Ranking Lists"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/prioritizer4.png" alt="Ranking Lists"></img>
+            <div class="project__cards__card__info">
               <h3>Ranking Lists</h3>
               <p>The lists of unranked and ranked items updates as the user makes each comparison. Not every comparison will result in a final ranking. Undo affects the ranking lists as well.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/prioritizer5.png" alt="Results"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/prioritizer5.png" alt="Results"></img>
+            <div class="project__cards__card__info">
               <h3>Results</h3>
               <p>After all items have been ranked, the ordered list appears in a text area for easy copying by the user.</p>
             </div>

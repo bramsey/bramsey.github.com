@@ -12,66 +12,58 @@
 	  <link href="assets/css/normalize.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="assets/css/fontello.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/big.css" media="only screen and (min-width : 1280px)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/tablet-portrait.css" media="only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/tablet-landscape.css" media="only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/iphone5-landscape.css" media="only screen and (min-width : 480px) and (max-width : 568px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/mobile-landscape.css" media="only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/mobile-portrait.css" media="only screen and (max-width : 320px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
-		<header class="page-header">
-			<div class="container">  
+		<header class="site-header">
+			<div class="container group">  
         <div id="profile">
           <a href="/"><img src="assets/pics/cartoon_color.png"></img></a>
         </div>
-        <h1>Bill Ramsey</h1>
+        <h1 class="my-name">Bill Ramsey</h1>
         <ul class="icons group">
-          <li><a class="btn" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
-          <li><a class="btn" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
-          <li><a class="btn" href="http://github.com/bramsey" target="_blank"><i class="icon-github github"></i></a></li>
+          <li><a class="" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
+          <li><a class="" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
+          <li><a class="" href="http://github.com/bramsey" target="_blank"><i class="icon-github github"></i></a></li>
         </ul>
-        <nav>
-          <ul id="#nav" class="group">
-            <li class=""><a href="#about"><i class="icon-user"></i>About</a></li>
-            <li class="selected"><a href="projects.html"><i class="icon-ok"></i>Projects</a></li>
-          </ul>
+        <nav class="site-nav">
+          <a href="about.html" class="site-nav__link "><i class="icon-user"></i>About</a>
+          <a href="projects.html" class="site-nav__link selected"><i class="icon-ok"></i>Projects</a>
         </nav>
 			</div>
 		</header>
     <div class="container">
       <div id="question-asker" class="project">
-        <div class="project-info">
+        <div class="project__info group">
           <a class="back" href="projects.html">Back</a>
           <h2>Question Asker</h2>
           <h3><a href="http://billiamram.com/question-asker" target="_blank">Try it out</a></h3>
     <p>Efficiently answer yes or no questions about a list of stuff.</p>
         </div>
-        <div class="cards">
-          <div class="card group">
-            <img src="assets/pics/question2.png" alt="List Input Screen"></img>
-            <div class="card-info">
+        <div class="project__cards">
+          <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/question2.png" alt="List Input Screen"></img>
+            <div class="project__cards__card__info">
               <h3>List Input Screen</h3>
               <p>The initial screen for the tool. The description of purpose and area for action is presented clearly.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/question3.png" alt="Question Input Screen"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/question3.png" alt="Question Input Screen"></img>
+            <div class="project__cards__card__info">
               <h3>Question Input Screen</h3>
               <p>Where the user specifies the yes or no question. Clicking the button or hitting enter will advance to the next screen.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/question4.png" alt="Question Answering Screen"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/question4.png" alt="Question Answering Screen"></img>
+            <div class="project__cards__card__info">
               <h3>Question Answering Screen</h3>
               <p>The user is shown the question, the item currently the subject of the question, the actions used for answering the question, and the instructions for keyboard hotkeys. Undo will reverse the previous answer, allowing the user to quickly answer the question and go back if they think their answer was incorrect. The page is streamlined to make answering the question as fast as possible.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/question5.png" alt="Results"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/question5.png" alt="Results"></img>
+            <div class="project__cards__card__info">
               <h3>Results</h3>
               <p>The results screen shows the list of items split into the yes or no categories. The lists are in text areas for easy copying by the user.</p>
             </div>

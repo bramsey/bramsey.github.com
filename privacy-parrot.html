@@ -12,59 +12,51 @@
 	  <link href="assets/css/normalize.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="assets/css/fontello.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/big.css" media="only screen and (min-width : 1280px)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/tablet-portrait.css" media="only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/tablet-landscape.css" media="only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/iphone5-landscape.css" media="only screen and (min-width : 480px) and (max-width : 568px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/mobile-landscape.css" media="only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape)" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/mobile-portrait.css" media="only screen and (max-width : 320px) and (orientation : portrait)" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="top">
-		<header class="page-header">
-			<div class="container">  
+		<header class="site-header">
+			<div class="container group">  
         <div id="profile">
           <a href="/"><img src="assets/pics/cartoon_color.png"></img></a>
         </div>
-        <h1>Bill Ramsey</h1>
+        <h1 class="my-name">Bill Ramsey</h1>
         <ul class="icons group">
-          <li><a class="btn" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
-          <li><a class="btn" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
-          <li><a class="btn" href="http://github.com/bramsey" target="_blank"><i class="icon-github github"></i></a></li>
+          <li><a class="" href="mailto:bill_at_billiamram.com" target="_blank"><i class="icon-mail email"></i></a></li>
+          <li><a class="" href="http://twitter.com/billiamram" target="_blank"><i class="icon-twitter twitter"></i></a></li>
+          <li><a class="" href="http://github.com/bramsey" target="_blank"><i class="icon-github github"></i></a></li>
         </ul>
-        <nav>
-          <ul id="#nav" class="group">
-            <li class=""><a href="#about"><i class="icon-user"></i>About</a></li>
-            <li class="selected"><a href="projects.html"><i class="icon-ok"></i>Projects</a></li>
-          </ul>
+        <nav class="site-nav">
+          <a href="about.html" class="site-nav__link "><i class="icon-user"></i>About</a>
+          <a href="projects.html" class="site-nav__link selected"><i class="icon-ok"></i>Projects</a>
         </nav>
 			</div>
 		</header>
     <div class="container">
       <div id="privacy-parrot" class="project">
-        <div class="project-info">
+        <div class="project__info group">
           <a class="back" href="projects.html">Back</a>
           <h2>Privacy Parrot</h2>
           <h3><a href="http://privacyparrot.com" target="_blank">Try it out</a></h3>
     <p>A tool that analyzes privacy policies with artificial intelligence to determine if a site can share your personal information.</p>
         </div>
-        <div class="cards">
-          <div class="card group">
-            <img src="assets/pics/privacy_parrot1.png" alt="Landing Page"></img>
-            <div class="card-info">
+        <div class="project__cards">
+          <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/privacy_parrot1.png" alt="Landing Page"></img>
+            <div class="project__cards__card__info">
               <h3>Landing Page</h3>
               <p>The mascot, the title, the value proposition, and the main action of the site are all front and center. Every section of the site can be found clearly and unobtrusively.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/privacy_parrot2.png" alt="Popular Policies"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/privacy_parrot2.png" alt="Popular Policies"></img>
+            <div class="project__cards__card__info">
               <h3>Popular Policies</h3>
               <p>The list of most frequently visited policy pages. The results for a search query that matches multiple policies also uses this format. Search and navigationare now at the top of the site with a diminished focus, but are still easy to find.</p>
             </div>
           </div>
-    <div class="card group">
-            <img src="assets/pics/privacy_parrot3.png" alt="Policy Page"></img>
-            <div class="card-info">
+    <div class="project__cards__card group">
+            <img class="project__cards__card__img" src="assets/pics/privacy_parrot3.png" alt="Policy Page"></img>
+            <div class="project__cards__card__info">
               <h3>Policy Page</h3>
               <p>Displays the classification information for the requested site. The classification is most prominent, but links to the site, its privacy policy, and a correction form are easily available.</p>
             </div>
