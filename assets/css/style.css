@@ -39,10 +39,69 @@ a:hover {
   color: #333;
 }
 
+ul { 
+	list-style: none; 
+}
+
 /** Abstractions **/
 .container {
   margin: auto;
   width: 288px;
+}
+
+.btn, .project__cards__card {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.social {
+  float: left;
+  padding-left: 16px;
+}
+
+.social__item {
+  display: inline-block;
+}
+.social__item:last-child { margin-right: 0; }
+
+.social i {
+  color: #222;
+}
+
+.icon-mail:hover { color: #f33; }
+.icon-twitter:hover { color: #2daae1; }
+.icon-github:hover { color: #3e3; }
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group { *zoom: 1; }
+.group:after { clear:both; }
+
+.btn {
+	-moz-box-shadow:  1px 1px 1px #777;
+	-webkit-box-shadow:  1px 1px 1px #777;
+	box-shadow:  1px 1px 1px #777;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #ccc;
+	background: #ebebeb;
+}
+
+.btn:active {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin-top: 13px;
+	margin-left: 1px;
+	margin-bottom: -1px;
+  margin-right: -1px;
+}
+
+.back {
+  float: right;
 }
 
 /** Site header **/
@@ -53,22 +112,16 @@ a:hover {
 	//background: url("../pics/textures/irongrip.png"); 
 }
 
-#profile {
+.profile {
   float: left;
   margin-top: 4px;
   margin-bottom: 4px;
 }
 
-#profile img {
+.profile__img {
   border: 2px solid #333;
   height: 32px;
   width: 32px;
-}
-
-#profile img, .btn, .project__cards__card {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
 }
 
 .my-name {
@@ -135,69 +188,6 @@ a:hover {
   width: 256px;
 }
 
-
-
-
-ul { 
-	list-style: none; 
-}
-
-li {
-  margin-right: 1em;
-}
-
-.icons {
-  float: left;
-  display: none;
-}
-
-.icons li {
-  display: inline-block;
-}
-
-.icons i {
-  color: #222;
-}
-
-.email:hover { color: #f33; }
-.twitter:hover { color: #2daae1; }
-.github:hover { color: #3e3; }
-
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-
-.group { *zoom: 1; }
-.group:after { clear:both; }
-
-li:last-child { margin-right: 0; }
-
-.btn {
-	-moz-box-shadow:  1px 1px 1px #777;
-	-webkit-box-shadow:  1px 1px 1px #777;
-	box-shadow:  1px 1px 1px #777;
-  padding: 4px 4px 4px 4px;
-  border: 1px solid #ccc;
-}
-
-.btn:active {
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	margin-top: 13px;
-	margin-left: 1px;
-	margin-bottom: -1px;
-  margin-right: -1px;
-}
-
-.btn {
-	background: #ebebeb;
-}
-
-.back {
-  float: right;
-}
 
 /** extra stuff to keep **/
 
