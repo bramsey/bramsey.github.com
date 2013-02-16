@@ -1,4 +1,5 @@
 !function ($) {
+    var previewSelector = '.project-previews, .section-title';
 
     // Load project page based on uri hash.
     if (window.location.hash) {
@@ -7,7 +8,7 @@
         if (link) {
             loadProject(link, function($project) {
                 $project.fadeIn('fast');
-                $('.project-previews').hide();
+                $(previewSelector).hide();
             });
         }
     }
@@ -26,7 +27,7 @@
       $('.projects').on('click', '.project', function(e) {
         var $project = $(this).closest('.project');
         $project.hide();
-        $('.project-previews').fadeIn('fast');
+        $(previewSelector).fadeIn('fast');
 
         $.scrollTo($('.project-previews__preview[data-project-id*=' + $project.attr('id') + ']').offset().top - 16);
         window.history.pushState(null, null, "projects.html");
@@ -62,7 +63,7 @@
 
         loadProject(this, function($project) {
             $project.fadeIn('fast');
-            $('.project-previews').hide();
+            $(previewSelector).hide();
             //$.scrollTo($project);
             $.scrollTo(0);
             window.history.pushState(null, null, "projects.html#" + $project.attr('id'));
