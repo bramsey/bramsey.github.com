@@ -4,15 +4,15 @@ module.exports = function(grunt) {
 
     // config
     grunt.initConfig({
-        smushit: { path: '../assets/pics' },
+        smushit: { path: {src: '../assets/pics' }},
         min: {
             main: {
                 // minify and bundle several js files together 
                 src: [
                     '../vendor/js/*.js',
-                    'js/*.js'
+                    '../js/*.js'
                 ],
-                dest: 'assets/js/script.min.js',
+                dest: '../assets/js/script.min.js',
                 separator: ';'
             },
         },
@@ -37,4 +37,6 @@ module.exports = function(grunt) {
             }
         }
     });
+
+    grunt.registerTask('default', 'stylus min');
 };
