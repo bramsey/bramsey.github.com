@@ -1,5 +1,5 @@
 <div id="{{project.id}}" class="project">
-  <div class="project__info group">
+  <div class="project__info">
     <a class="back" href="projects.html">Back</a>
     <h2>{{project.title}}</h2>
     {{#project.demo_url}}
@@ -9,7 +9,7 @@
   </div>
   <div class="project__cards">
     {{#project.cards}}
-    <div class="project__cards__card group">
+    <div class="project__cards__card">
       <img class="project__cards__card__img" src="{{img_url}}" alt="{{title}}"></img>
       <div class="project__cards__card__info">
         <h3>{{title}}</h3>

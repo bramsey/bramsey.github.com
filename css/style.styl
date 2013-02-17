@@ -1,3 +1,25 @@
+/** Constants **/
+
+
+/** Mixins **/
+
+
+/** Extendable classes **/
+
+.clearfix {
+  *zoom: 1;
+
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
 /** General elements **/
 html {overflow-y: scroll;}
 
@@ -69,14 +91,6 @@ ul {
 .icon-mail:hover { color: #f33; }
 .icon-twitter:hover { color: #2daae1; }
 .icon-github:hover { color: #3e3; }
-
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-
-.group { *zoom: 1; }
-.group:after { clear:both; }
 
 .btn {
 	-moz-box-shadow:  1px 1px 1px #777;
@@ -162,6 +176,7 @@ ul {
 
 /** Project previews **/
 .project-previews {
+  @extend .clearfix;
   margin-left: -16px;
 }
 
@@ -186,10 +201,12 @@ ul {
 }
 
 .project__info {
+  @extend .clearfix;
   margin-bottom: 16px;
 }
 
 .project__cards__card {
+  @extend .clearfix;
   background-color: #ebebeb;
   display: inline-block;
   margin-bottom: 32px;

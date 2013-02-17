@@ -66,6 +66,9 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
 
+.clearfix,.project-previews,.project__info,.project__cards__card{*zoom:1;}
+.clearfix:before,.project-previews:before,.project__info:before,.project__cards__card:before,.clearfix:after,.project-previews:after,.project__info:after,.project__cards__card:after{content:"";display:table}
+.clearfix:after,.project-previews:after,.project__info:after,.project__cards__card:after{clear:both}
 html{overflow-y:scroll}
 *{font-family:'helvetica neue',sans-serif;font-size:16px}
 body{background:#ccc}
@@ -84,9 +87,6 @@ ul{list-style:none}
 .icon-mail:hover{color:#f33}
 .icon-twitter:hover{color:#2daae1}
 .icon-github:hover{color:#3e3}
-.group:before,.group:after{content:"";display:table}
-.group{*zoom:1}
-.group:after{clear:both}
 .btn{-moz-box-shadow:1px 1px 1px #777;-webkit-box-shadow:1px 1px 1px #777;box-shadow:1px 1px 1px #777;padding:4px 4px 4px 4px;border:1px solid #ccc;background:#ebebeb}
 .btn:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;margin-top:13px;margin-left:1px;margin-bottom:-1px;margin-right:-1px}
 .back{float:right}
