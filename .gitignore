@@ -11,3 +11,4 @@ doc/
 *.job.rb
 public/uploads/*
 public/assets/*
+build/node_modules/*
