@@ -1,8 +1,34 @@
 /** Constants **/
+$pageWidth = 320px;
+$gutterWidth = 16px;
+$containerWidth = $pageWidth - 2*$gutterWidth;
+$previewHeight = 0.979 * $containerWidth;
+$headerHeight = 44px;
 
+/* colors */
+$bgColor = #ccc;
+$textColor = #333;
+$navBgColor = #333;
+if light($navBgColor) {
+  $iconColor = invert(rgb($bgColor));
+} else {
+  $iconColor = $bgColor;
+}
+
+$highlightColor = #36e;
+$borderColor = #999;
+$contentBgColor = #fff;
+$infoBgColor = #ebebeb;
 
 /** Mixins **/
-
+borderRadiusBottom($pixels) {
+  -webkit-border-bottom-right-radius: $pixels;
+  -webkit-border-bottom-left-radius: $pixels;
+  -moz-border-radius-bottomright: $pixels;
+  -moz-border-radius-bottomleft: $pixels;
+  border-bottom-right-radius: $pixels;
+  border-bottom-left-radius: $pixels;
+}
 
 /** Extendable classes **/
 
@@ -19,6 +45,10 @@
   }
 }
 
+.container-width {
+  width: $containerWidth;
+}
+
 
 /** General elements **/
 html {overflow-y: scroll;}
@@ -29,14 +59,14 @@ html {overflow-y: scroll;}
 }
 
 body {
-  background: #ccc;
+  background: $bgColor;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #333;
+	color: $textColor;
 	font-weight: 500;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: .75em;
 }
 
 h1, h1 i {
@@ -53,25 +83,29 @@ h3, h3 i {
 
 a {
 	text-decoration: none;
-}
 
-a:hover {
-	text-decoration: underline;
-  color: #36e;
+  &:hover {
+    text-decoration: underline;
+    color: $highlightColor;
+  }
 }
 
 ul { 
 	list-style: none; 
 }
 
+section {
+  min-height: $previewHeight;
+}
+
 /** Abstractions **/
 .container {
+  @extend .container-width
   margin: auto;
-  width: 288px;
 }
 
 .social {
-  padding-left: 0px;
+  padding-left: 0;
   margin: auto;
   display: inline-block;
   /** magic number **/
@@ -85,7 +119,7 @@ ul {
 .social__item:last-child { margin-right: 0; }
 
 .social i {
-  color: #ccc;
+  color: $iconColor;
 }
 
 .icon-mail:hover { color: #f33; }
@@ -120,26 +154,28 @@ ul {
 
 /** Site header **/
 .site-header {
-  height: 44px;
-  background: #333;
-  margin-bottom: 18px;
+  /** magic number because of ios bar size, how ot fix? **/
+  height: $headerHeight;
+  background: $navBgColor;
+  margin-bottom: $gutterWidth;
 }
 
 .profile {
   float: left;
+  /** magic **/
   margin-top: 4px;
   margin-bottom: 4px;
 }
 
 .profile__img {
-  border: 2px solid #333;
+  border: 2px solid $navBgColor;
+  /** magic **/
   height: 32px;
   width: 32px;
 }
 
 .my-name {
   float: left; 
-  font-size: 24px;
   display: none;
 }
 
@@ -147,7 +183,7 @@ ul {
   display: inline-block;
   float: right;
   /** magic number **/
-  line-height: 44px;
+  line-height: $headerHeight;
 }
 
 .site-nav__link, .project-previews__preview {
@@ -157,19 +193,20 @@ ul {
 .site-nav__link {
   height: 100%;
   margin-right: .5em;
-  color: #ccc;
+  color: $iconColor;
 }
 
 .site-nav__link:last-of-type { margin-right: 0; }
 
 .site-nav__link:hover {
   text-decoration: none;
-  color: #36e;
+  color: $highlightColor;
 }
 
 .site-nav__link.selected, .site-nav__link.selected:visited {
-  color: #ccc;
-  border-bottom: 9px solid #ccc;
+  color: $iconColor;
+  /** magic **/
+  border-bottom: 9px solid $bgColor;
   padding-bottom: 4px;
 }
 
@@ -177,17 +214,17 @@ ul {
 /** Project previews **/
 .project-previews {
   @extend .clearfix;
-  margin-left: -16px;
+  margin-left: 0 - $gutterWidth;
 }
 
 .project-previews__preview {
-  border-bottom: 2px solid #999;
-  width: 288px;
-  height: 282px;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  @extend .container-width;
+  border-bottom: 2px solid $borderColor;
+  height: $previewHeight;
+  margin-left: $gutterWidth;
+  margin-bottom: $gutterWidth;
   float: left;
-  background: #fff;
+  background: $contentBgColor;
 }
 
 .project-previews__preview__img {
@@ -197,29 +234,24 @@ ul {
 
 /** Projects **/
 .project {
-  width: 288px;
+  @extend .container-width;
 }
 
 .project__info {
   @extend .clearfix;
-  margin-bottom: 16px;
+  margin-bottom: $gutterWidth;
 }
 
 .project__cards__card {
   @extend .clearfix;
-  background-color: #ebebeb;
+  background-color: $infoBgColor;
   display: inline-block;
-  margin-bottom: 32px;
-  -webkit-border-bottom-right-radius: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  -moz-border-radius-bottomleft: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  margin-bottom: 2*$gutterWidth;
+  borderRadiusBottom(8px);
 }
 
 .project__cards__card:last-of-type {
-  margin-bottom: 16px;
+  margin-bottom: $gutterWidth;
 }
 
 .project__cards__card__img {
@@ -227,25 +259,14 @@ ul {
 }
 
 .project__cards__card__info {
-  padding: 16px;
-  width: 256px;
+  padding: $gutterWidth;
+  width: $containerWidth - 2*$gutterWidth;
 }
 
 /** Footer **/
 .site-footer {
   text-align: center;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  background: #333;
+  padding-bottom: $gutterWidth;
+  padding-top: $gutterWidth;
+  background: $navBgColor;
 }
-
-
-/** extra stuff to keep **/
-
-/*
-background-color: #f8f5e1;
-
--webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
--moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4),inset 0 1px 1px #fff;
-*/
