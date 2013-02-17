@@ -1,6 +1,6 @@
 /** Constants **/
 $pageWidth = 320px;
-$gutterWidth = 16px;
+$gutterWidth = 1em;
 $containerWidth = $pageWidth - 2*$gutterWidth;
 $previewWidth = 288px;
 $previewHeight = 0.979 * $previewWidth;
@@ -48,6 +48,10 @@ borderRadiusBottom($pixels) {
 
 .container-width {
   width: $containerWidth;
+}
+
+.no-tap {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 
@@ -105,9 +109,11 @@ ul {
 
 /** Abstractions **/
 .container {
-  @extend .container-width
   @extend .clearfix
-  margin: auto;
+  max-width: 1000px
+  margin: 0 auto;
+  padding: 0 $gutterWidth;
+  transition: margin 0.3s ease-out;
 }
 
 .social {
@@ -192,11 +198,8 @@ ul {
   line-height: $headerHeight;
 }
 
-.site-nav__link, .project-previews__preview {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 .site-nav__link {
+  @extend .no-tap;
   height: 100%;
   margin-right: .5em;
   color: $iconColor;
@@ -220,14 +223,13 @@ ul {
 /** Project previews **/
 .project-previews {
   @extend .clearfix;
-  margin-left: 0 - $gutterWidth;
+  //margin-left: 0 - $gutterWidth;
 }
 
 .project-previews__preview {
-  width: $previewWidth;
+  @extend .no-tap;
+  width: 100%;
   border-bottom: 2px solid $borderColor;
-  height: $previewHeight;
-  margin-left: $gutterWidth;
   margin-bottom: $gutterWidth;
   float: left;
   background: $contentBgColor;
@@ -273,4 +275,25 @@ ul {
 .site-footer {
   text-align: center;
   background: $navBgColor;
+}
+
+/** Responsive adjustments **/
+
+// 480+
+
+@media (min-width: 480px) {
+  .container {
+    padding: 0 2em;
+  }
+
+  .project-previews__preview {
+    $previewWidth = (100/2 - 2*$gutterWidth)%;
+    $previewHeight = 2.5 * $previewWidth;
+    width: $previewWidth;
+    min-height: 229px;
+    &:nth-of-type(2n) {
+      margin-left: 0;
+      margin-left: $gutterWidth;
+    }
+  }
 }
