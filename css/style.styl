@@ -2,7 +2,8 @@
 $pageWidth = 320px;
 $gutterWidth = 16px;
 $containerWidth = $pageWidth - 2*$gutterWidth;
-$previewHeight = 0.979 * $containerWidth;
+$previewWidth = 288px;
+$previewHeight = 0.979 * $previewWidth;
 $headerHeight = 44px;
 
 /* colors */
@@ -218,7 +219,7 @@ section {
 }
 
 .project-previews__preview {
-  @extend .container-width;
+  width: $previewWidth;
   border-bottom: 2px solid $borderColor;
   height: $previewHeight;
   margin-left: $gutterWidth;
