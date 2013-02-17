@@ -66,13 +66,14 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
 
-.clearfix,.project-previews,.project__info,.project__cards__card{*zoom:1;}
-.clearfix:before,.project-previews:before,.project__info:before,.project__cards__card:before,.clearfix:after,.project-previews:after,.project__info:after,.project__cards__card:after{content:"";display:table}
-.clearfix:after,.project-previews:after,.project__info:after,.project__cards__card:after{clear:both}
+.clearfix,.container,.project-previews,.project__info,.project__cards__card{*zoom:1;}
+.clearfix:before,.container:before,.project-previews:before,.project__info:before,.project__cards__card:before,.clearfix:after,.container:after,.project-previews:after,.project__info:after,.project__cards__card:after{content:"";display:table}
+.clearfix:after,.container:after,.project-previews:after,.project__info:after,.project__cards__card:after{clear:both}
 .container-width,.container,.project{width:288px}
 html{overflow-y:scroll}
 *{font-family:'helvetica neue',sans-serif;font-size:16px}
-body{background:#ccc}
+body{background:#333}
+.wrapper{width:100%;background:#ccc;padding-top:16px;min-height:253.952px}
 h1,h2,h3,h4,h5,h6{color:#333;font-weight:500;margin-top:0;margin-bottom:.75em}
 h1,h1 i{font-size:24px}
 h2,h2 i{font-size:21px}
@@ -80,9 +81,8 @@ h3,h3 i{font-size:18px}
 a{text-decoration:none;}
 a:hover{text-decoration:underline;color:#36e}
 ul{list-style:none}
-section{min-height:281.952px}
 .container{margin:auto}
-.social{padding-left:0;margin:auto;display:inline-block;}
+.social{padding-left:0;margin:auto;display:inline-block;line-height:44px;}
 .social__item{display:inline-block;margin-right:1em}
 .social__item:last-child{margin-right:0}
 .social i{color:#ccc}
@@ -92,7 +92,7 @@ section{min-height:281.952px}
 .btn{-moz-box-shadow:1px 1px 1px #777;-webkit-box-shadow:1px 1px 1px #777;box-shadow:1px 1px 1px #777;padding:4px 4px 4px 4px;border:1px solid #ccc;background:#ebebeb}
 .btn:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;margin-top:13px;margin-left:1px;margin-bottom:-1px;margin-right:-1px}
 .back{float:right}
-.site-header{height:44px;background:#333;margin-bottom:16px}
+.site-header{height:44px;background:#333}
 .profile{float:left;margin-top:4px;margin-bottom:4px}
 .profile__img{border:2px solid #333;height:32px;width:32px}
 .my-name{float:left;display:none}
@@ -110,4 +110,4 @@ section{min-height:281.952px}
 .project__cards__card:last-of-type{margin-bottom:16px}
 .project__cards__card__img{max-width:100%}
 .project__cards__card__info{padding:16px;width:256px}
-.site-footer{text-align:center;padding-bottom:16px;padding-top:16px;background:#333}
+.site-footer{text-align:center;background:#333}

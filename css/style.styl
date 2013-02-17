@@ -60,7 +60,14 @@ html {overflow-y: scroll;}
 }
 
 body {
+  background: $navBgColor;
+}
+
+.wrapper {
+  width: 100%;
   background: $bgColor;
+  padding-top: $gutterWidth;
+  min-height: $previewHeight - $headerHeight + $gutterWidth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,13 +102,10 @@ ul {
 	list-style: none; 
 }
 
-section {
-  min-height: $previewHeight;
-}
-
 /** Abstractions **/
 .container {
   @extend .container-width
+  @extend .clearfix
   margin: auto;
 }
 
@@ -109,6 +113,7 @@ section {
   padding-left: 0;
   margin: auto;
   display: inline-block;
+  line-height: $headerHeight;
   /** magic number **/
 }
 
@@ -158,7 +163,6 @@ section {
   /** magic number because of ios bar size, how ot fix? **/
   height: $headerHeight;
   background: $navBgColor;
-  margin-bottom: $gutterWidth;
 }
 
 .profile {
@@ -267,7 +271,5 @@ section {
 /** Footer **/
 .site-footer {
   text-align: center;
-  padding-bottom: $gutterWidth;
-  padding-top: $gutterWidth;
   background: $navBgColor;
 }
