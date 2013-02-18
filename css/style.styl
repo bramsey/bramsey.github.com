@@ -17,7 +17,7 @@ if light($textColor) {
   $iconColor = $bgColor;
 }
 
-$highlightColor = #36e;
+$highlightColor = darken($navBgColor, 30%);
 $borderColor = #999;
 $contentBgColor = #fff;
 $infoBgColor = #ebebeb;
@@ -136,6 +136,7 @@ ul {
   color: $iconColor;
 }
 
+.icon-megaphone:hover { color: $highlightColor; }
 .icon-mail:hover { color: #f33; }
 .icon-twitter:hover { color: #2daae1; }
 .icon-github:hover { color: #3e3; }
@@ -182,7 +183,7 @@ ul {
 }
 
 .profile__img {
-  border: 2px solid $textColor;
+  border: 2px solid darken($navBgColor, 30%);
   /** magic **/
   height: 32px;
   width: 32px;
@@ -257,7 +258,7 @@ ul {
   background-color: $infoBgColor;
   border-bottom: 2px solid $borderColor;
   display: inline-block;
-  margin-bottom: 2*$gutterWidth;
+  margin-bottom: 1.5*$gutterWidth;
   borderRadiusBottom(8px);
 }
 

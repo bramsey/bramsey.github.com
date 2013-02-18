@@ -80,13 +80,14 @@ h1,h1 i{font-size:24px}
 h2,h2 i{font-size:21px}
 h3,h3 i{font-size:18px}
 a{text-decoration:none;}
-a:hover{text-decoration:underline;color:#36e}
+a:hover{text-decoration:underline;color:#248b90}
 ul{list-style:none}
 .container,.project{max-width:1280px;margin:0 auto;padding:0 1em;transition:margin .3s ease-out}
 .social{padding-left:0;margin:auto;display:inline-block;line-height:44px;}
 .social__item{display:inline-block;margin-right:1em}
 .social__item:last-child{margin-right:0}
 .social i{color:#ccc}
+.icon-megaphone:hover{color:#248b90}
 .icon-mail:hover{color:#f33}
 .icon-twitter:hover{color:#2daae1}
 .icon-github:hover{color:#3e3}
@@ -95,18 +96,18 @@ ul{list-style:none}
 .back{float:right}
 .site-header{height:44px;background:#34c6cd;border-bottom:2px solid #2eb3ba}
 .profile{float:left;margin-top:4px;margin-bottom:4px}
-.profile__img{border:2px solid #333;height:32px;width:32px}
+.profile__img{border:2px solid #248b90;height:32px;width:32px}
 .my-name{float:left;display:none}
 .site-nav{display:inline-block;float:right;line-height:44px}
 .site-nav__link{height:100%;margin-right:.75em;color:#ccc}
 .site-nav__link:last-of-type{margin-right:0}
-.site-nav__link:hover{text-decoration:none;color:#36e}
+.site-nav__link:hover{text-decoration:none;color:#248b90}
 .site-nav__link.selected,.site-nav__link.selected:visited{color:#fff;font-weight:600;}
 .project-previews__preview{width:100%;border-bottom:2px solid #999;margin-bottom:1em;float:left;background:#fff}
 .project-previews__preview__img{width:100%}
 .project{padding:0}
 .project__info{margin-bottom:1em}
-.project__cards__card{width:100%;background-color:#ebebeb;border-bottom:2px solid #999;display:inline-block;margin-bottom:2em;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius-bottomright:8px;-moz-border-radius-bottomleft:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.project__cards__card{width:100%;background-color:#ebebeb;border-bottom:2px solid #999;display:inline-block;margin-bottom:1.5em;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius-bottomright:8px;-moz-border-radius-bottomleft:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
 .project__cards__card:last-of-type{margin-bottom:1em}
 .project__cards__card__img{max-width:100%}
 .project__cards__card__info{padding:1em}
