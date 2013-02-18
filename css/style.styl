@@ -306,7 +306,9 @@ ul {
 .project__info {
   @extend .clearfix;
   margin-bottom: $gutterWidth;
-  max-width: 30em;
+  p {
+    max-width: 30em;
+  }
 }
 
 .project__cards__card {
@@ -387,6 +389,30 @@ ul {
     max-width: 33%;
   }
   
+}
+
+@media (min-height: 600px) {
+  .section-info {
+    margin-top: 2em;
+  }
+}
+
+@media (min-height: 700px) {
+  .section-info {
+    margin-top: 4em;
+  }
+}
+
+@media (min-height: 800px) {
+  .section-info {
+    margin-top: 5em;
+  }
+}
+
+@media (min-height: 900px) {
+  .section-info {
+    margin-top: 6em;
+  }
 }
 
 /*

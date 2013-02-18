@@ -108,7 +108,8 @@ ul{list-style:none}
 .project-previews__preview{width:100%;border-bottom:2px solid #999;margin-bottom:1em;float:left;background:#fff;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-top-right-radius:8px}
 .project-previews__preview__img{width:100%;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-top-right-radius:8px}
 .project{padding:0}
-.project__info{margin-bottom:1em;max-width:30em}
+.project__info{margin-bottom:1em;}
+.project__info p{max-width:30em}
 .project__cards__card{width:100%;background-color:#ebebeb;border-bottom:2px solid #999;display:inline-block;margin-bottom:1.5em;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-top-right-radius:8px}
 .project__cards__card:last-of-type{margin-bottom:1em}
 .project__cards__card__img{max-width:100%;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-top-right-radius:8px}
@@ -123,4 +124,8 @@ ul{list-style:none}
 .project-previews__preview:nth-of-type(3n){margin-right:0}
 .project__cards__card__img{max-width:65%;float:left;-webkit-border-top-left-radius:0;-webkit-border-top-right-radius:0;-moz-border-radius-topleft:0;-moz-border-radius-topright:0;border-top-left-radius:0;border-top-right-radius:0;-webkit-border-top-left-radius:8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-bottomleft:8px;border-top-left-radius:8px;border-bottom-left-radius:8px}
 .project__cards__card__info{float:left;max-width:33%}
+}@media (min-height: 600px){.section-info{margin-top:2em}
+}@media (min-height: 700px){.section-info{margin-top:4em}
+}@media (min-height: 800px){.section-info{margin-top:5em}
+}@media (min-height: 900px){.section-info{margin-top:6em}
 }
