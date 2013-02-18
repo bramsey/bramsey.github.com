@@ -131,10 +131,15 @@ h3, h3 i {
 
 a {
 	text-decoration: none;
+  color: $navBgColor;
 
   &:hover {
     text-decoration: underline;
     color: $highlightColor;
+  }
+
+  &:visited {
+    color: #510fad;
   }
 }
 
@@ -236,18 +241,18 @@ ul {
   line-height: $headerHeight;
 }
 
-.site-nav__link {
+.site-nav__link, .site-nav__link:visited {
   @extend .no-tap;
   height: 100%;
   margin-right: .75em;
   color: lighten($navBgColor, 70%);
-}
 
-.site-nav__link:last-of-type { margin-right: 0; }
+  &:last-of-type { margin-right: 0; }
 
-.site-nav__link:hover {
-  text-decoration: none;
-  color: $highlightColor;
+  &:hover {
+    text-decoration: none;
+    color: $highlightColor;
+  }
 }
 
 .site-nav__link.selected, .site-nav__link.selected:visited {
