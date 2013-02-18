@@ -47,6 +47,24 @@ borderRadiusBottom($pixels) {
   border-bottom-left-radius: $pixels;
 }
 
+borderRadiusRight($pixels) {
+  -webkit-border-top-right-radius: $pixels;
+  -webkit-border-bottom-right-radius: $pixels;
+  -moz-border-radius-topright: $pixels;
+  -moz-border-radius-bottomright: $pixels;
+  border-top-right-radius: $pixels;
+  border-bottom-right-radius: $pixels;
+}
+
+borderRadiusLeft($pixels) {
+  -webkit-border-top-left-radius: $pixels;
+  -webkit-border-bottom-left-radius: $pixels;
+  -moz-border-radius-topleft: $pixels;
+  -moz-border-radius-bottomleft: $pixels;
+  border-top-left-radius: $pixels;
+  border-bottom-left-radius: $pixels;
+}
+
 /** Extendable classes **/
 
 .clearfix {
@@ -200,6 +218,7 @@ ul {
 
 .profile__img {
   border: 2px solid darken($navBgColor, 30%);
+  borderRadius(4px);
   /** magic **/
   height: 32px;
   width: 32px;
@@ -221,7 +240,7 @@ ul {
   @extend .no-tap;
   height: 100%;
   margin-right: .75em;
-  color: $iconColor;
+  color: lighten($navBgColor, 70%);
 }
 
 .site-nav__link:last-of-type { margin-right: 0; }
@@ -242,7 +261,7 @@ ul {
   //background: url("../pics/0.jpg") no-repeat center center;
 }
 
-.welcome__info {
+.section-info {
   background: #fff;
   borderRadiusTop(8px);
   max-width 30em;
@@ -269,10 +288,12 @@ ul {
   margin-bottom: $gutterWidth;
   float: left;
   background: $contentBgColor;
+  borderRadiusTop(8px);
 }
 
 .project-previews__preview__img {
   width: 100%;
+  borderRadiusTop(8px);
 }
 
 
@@ -285,6 +306,7 @@ ul {
 .project__info {
   @extend .clearfix;
   margin-bottom: $gutterWidth;
+  max-width: 30em;
 }
 
 .project__cards__card {
@@ -294,7 +316,7 @@ ul {
   border-bottom: 2px solid $borderColor;
   display: inline-block;
   margin-bottom: 1.5*$gutterWidth;
-  borderRadiusBottom(8px);
+  borderRadiusTop(8px);
 }
 
 .project__cards__card:last-of-type {
@@ -303,6 +325,7 @@ ul {
 
 .project__cards__card__img {
   max-width: 100%;
+  borderRadiusTop(8px);
 }
 
 .project__cards__card__info {
@@ -352,19 +375,11 @@ ul {
     }
   }
 
-  .project__cards__card {
-    borderRadiusBottom(0);
-    -webkit-border-top-right-radius: 8px;
-    -webkit-border-bottom-right-radius: 8px;
-    -moz-border-radius-topright: 8px;
-    -moz-border-radius-bottomright: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-
   .project__cards__card__img {
     max-width: 65%;
     float: left;
+    borderRadiusTop(0);
+    borderRadiusLeft(8px);
   }
 
   .project__cards__card__info {
