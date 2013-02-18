@@ -10,7 +10,7 @@ $headerHeight = 44px;
 /* colors */
 $bgColor = #ccc;
 $textColor = #333;
-$navBgColor = #2CE3D6;
+$navBgColor = #333;
 if light($navBgColor) {
   $iconColor = invert(rgb($bgColor));
 } else {
@@ -242,7 +242,8 @@ ul {
 
 /** Projects **/
 .project {
-  @extend .container-width;
+  @extend .container;
+  padding: 0;
 }
 
 .project__info {
@@ -252,6 +253,7 @@ ul {
 
 .project__cards__card {
   @extend .clearfix;
+  width: 100%;
   background-color: $infoBgColor;
   display: inline-block;
   margin-bottom: 2*$gutterWidth;
@@ -268,7 +270,6 @@ ul {
 
 .project__cards__card__info {
   padding: $gutterWidth;
-  width: $containerWidth - 2*$gutterWidth;
 }
 
 /** Footer **/
@@ -312,6 +313,27 @@ ul {
       margin-right: 0;
     }
   }
+
+  .project__cards__card {
+    borderRadiusBottom(0);
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .project__cards__card__img {
+    max-width: 65%;
+    float: left;
+  }
+
+  .project__cards__card__info {
+    float:left;
+    max-width: 33%;
+  }
+  
 }
 
 @media (min-width: 1280px) {
