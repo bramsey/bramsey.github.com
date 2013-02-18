@@ -93,24 +93,24 @@ ul{list-style:none}
 .btn{-moz-box-shadow:1px 1px 1px #777;-webkit-box-shadow:1px 1px 1px #777;box-shadow:1px 1px 1px #777;padding:4px 4px 4px 4px;border:1px solid #ccc;background:#ebebeb}
 .btn:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;margin-top:13px;margin-left:1px;margin-bottom:-1px;margin-right:-1px}
 .back{float:right}
-.site-header{height:44px;background:#333}
+.site-header{height:44px;background:#34c6cd;border-bottom:2px solid #2eb3ba}
 .profile{float:left;margin-top:4px;margin-bottom:4px}
 .profile__img{border:2px solid #333;height:32px;width:32px}
 .my-name{float:left;display:none}
 .site-nav{display:inline-block;float:right;line-height:44px}
-.site-nav__link{height:100%;margin-right:.5em;color:#ccc}
+.site-nav__link{height:100%;margin-right:.75em;color:#ccc}
 .site-nav__link:last-of-type{margin-right:0}
 .site-nav__link:hover{text-decoration:none;color:#36e}
-.site-nav__link.selected,.site-nav__link.selected:visited{color:#ccc;border-bottom:9px solid #ccc;padding-bottom:4px}
+.site-nav__link.selected,.site-nav__link.selected:visited{color:#fff;font-weight:600;}
 .project-previews__preview{width:100%;border-bottom:2px solid #999;margin-bottom:1em;float:left;background:#fff}
 .project-previews__preview__img{width:100%}
 .project{padding:0}
 .project__info{margin-bottom:1em}
-.project__cards__card{width:100%;background-color:#ebebeb;display:inline-block;margin-bottom:2em;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius-bottomright:8px;-moz-border-radius-bottomleft:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.project__cards__card{width:100%;background-color:#ebebeb;border-bottom:2px solid #999;display:inline-block;margin-bottom:2em;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius-bottomright:8px;-moz-border-radius-bottomleft:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
 .project__cards__card:last-of-type{margin-bottom:1em}
 .project__cards__card__img{max-width:100%}
 .project__cards__card__info{padding:1em}
-.site-footer{text-align:center;background:#333}
+.site-footer{border-top:2px solid #000;text-align:center;background:#333}
 @media (min-width: 481px){.container{padding:0 1em}
 .project-previews__preview{width:48.22%;}
 .project-previews__preview:nth-of-type(2n + 1){margin-right:3.56%}

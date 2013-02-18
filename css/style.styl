@@ -10,8 +10,8 @@ $headerHeight = 44px;
 /* colors */
 $bgColor = #ccc;
 $textColor = #333;
-$navBgColor = #333;
-if light($navBgColor) {
+$navBgColor = #34c6cd;
+if light($textColor) {
   $iconColor = invert(rgb($bgColor));
 } else {
   $iconColor = $bgColor;
@@ -66,7 +66,7 @@ html {overflow-y: scroll;}
 }
 
 body {
-  background: $navBgColor;
+  background: $textColor;
 }
 
 .wrapper {
@@ -171,6 +171,7 @@ ul {
   /** magic number because of ios bar size, how ot fix? **/
   height: $headerHeight;
   background: $navBgColor;
+  border-bottom: 2px solid darken($navBgColor, 10%);
 }
 
 .profile {
@@ -202,7 +203,7 @@ ul {
 .site-nav__link {
   @extend .no-tap;
   height: 100%;
-  margin-right: .5em;
+  margin-right: .75em;
   color: $iconColor;
 }
 
@@ -214,10 +215,9 @@ ul {
 }
 
 .site-nav__link.selected, .site-nav__link.selected:visited {
-  color: $iconColor;
+  color: #fff;
+  font-weight: 600;
   /** magic **/
-  border-bottom: 9px solid $bgColor;
-  padding-bottom: 4px;
 }
 
 
@@ -255,6 +255,7 @@ ul {
   @extend .clearfix;
   width: 100%;
   background-color: $infoBgColor;
+  border-bottom: 2px solid $borderColor;
   display: inline-block;
   margin-bottom: 2*$gutterWidth;
   borderRadiusBottom(8px);
@@ -274,8 +275,9 @@ ul {
 
 /** Footer **/
 .site-footer {
+  border-top: 2px solid #000;
   text-align: center;
-  background: $navBgColor;
+  background: $textColor;
 }
 
 /** Responsive adjustments **/
