@@ -103,8 +103,8 @@ ul{list-style:none}
 .site-nav__link:last-of-type{margin-right:0}
 .site-nav__link:hover{text-decoration:none;color:#248b90}
 .site-nav__link.selected,.site-nav__link.selected:visited{color:#fff;font-weight:600;}
-.hi{max-width:320px;margin:0 auto;text-align:center;background:#f66;padding:1em}
-.portrait{margin-bottom:1em}
+.welcome__info{background:#fff;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-top-right-radius:8px;max-width:30em;margin:0 auto;text-align:center;padding:1.5em}
+.portrait{margin-bottom:1em;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-top-right-radius:8px}
 .project-previews__preview{width:100%;border-bottom:2px solid #999;margin-bottom:1em;float:left;background:#fff}
 .project-previews__preview__img{width:100%}
 .project{padding:0}

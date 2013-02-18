@@ -23,6 +23,21 @@ $contentBgColor = #fff;
 $infoBgColor = #ebebeb;
 
 /** Mixins **/
+borderRadius($pixels) {
+  -webkit-border-radius: $pixels;
+  -moz-border-radius: $pixels;
+  border-radius: $pixels;
+}
+
+borderRadiusTop($pixels) {
+  -webkit-border-top-left-radius: $pixels;
+  -webkit-border-top-right-radius: $pixels;
+  -moz-border-radius-topleft: $pixels;
+  -moz-border-radius-topright: $pixels;
+  border-top-left-radius: $pixels;
+  border-top-right-radius: $pixels;
+}
+
 borderRadiusBottom($pixels) {
   -webkit-border-bottom-right-radius: $pixels;
   -webkit-border-bottom-left-radius: $pixels;
@@ -223,16 +238,22 @@ ul {
 }
 
 /** home page **/
-.hi {
-  max-width $pageWidth;
+.welcome {
+  //background: url("../pics/0.jpg") no-repeat center center;
+}
+
+.welcome__info {
+  background: #fff;
+  borderRadiusTop(8px);
+  max-width 30em;
   margin: 0 auto;
   text-align: center;
-  background: #f66;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .portrait {
   margin-bottom: 1em;
+  borderRadiusTop(8px);
 }
 
 
