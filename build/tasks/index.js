@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
             rootDir = this.data,
             layout, pages, projectFiles, projectPage;
 
-        console.log(rootDir);
+        console.log(this.data);
         // compile layout template
         layout = fs.readFileSync(rootDir + 'templates/layout.mustache', 'utf-8');
         layout = hogan.compile(layout);

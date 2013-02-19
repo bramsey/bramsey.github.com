@@ -2,12 +2,11 @@
   "id": "question-asker",
   "title": "Question Asker",
   "demo_url": "http://billiamram.com/question-asker",
-  "description": "Efficiently answer yes or no questions about a list of stuff.",
-  "cover_url": "assets/pics/question2.png",
+  "description": "Efficiently answer yes or no questions about a list of stuff. Another experiment in frictionless user input.",
   "cards": [
     {
       "title": "List Input Screen",
-      "description": "The initial screen for the tool. The description of purpose and area for action is presented clearly.",
+      "description": "The initial screen for the tool. The purpose and first steps are clear.",
       "img_url": "assets/pics/question2.png"
     },
     {
@@ -17,7 +16,7 @@
     },
     {
       "title": "Question Answering Screen",
-      "description": "The user is shown the question, the item currently the subject of the question, the actions used for answering the question, and the instructions for keyboard hotkeys. Undo will reverse the previous answer, allowing the user to quickly answer the question and go back if they think their answer was incorrect. The page is streamlined to make answering the question as fast as possible.",
+      "description": "The user is shown the question, the item currently the subject of the question, the actions used for answering the question, and the keyboard hotkeys to speed up input. Undo will reverse the previous answer, allowing the user to answer questions quickly without worrying about making a mistake. The page is streamlined to make answering the question as fast as possible.",
       "img_url": "assets/pics/question4.png"
     },
     {

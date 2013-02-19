@@ -2,12 +2,11 @@
   "id": "prioritizer",
   "title": "Prioritizer",
   "demo_url": "http://billiamram.com/prioritizer",
-  "description": "Quickly prioritize a list of stuff. Infers ordering based on prior input so you never have to compare two things twice.",
-  "cover_url": "assets/pics/prioritizer1.png",
+  "description": "Quickly prioritize a list of stuff. Infers ordering based on prior input so you never have to compare two things twice. This is an experiment in frictionless user input.",
   "cards": [
     {
       "title": "List Input Screen",
-      "description": "The initial screen for the tool. The description of purpose and area for action is presented clearly.",
+      "description": "The initial screen for the tool. The purpose and first steps are clear.",
       "img_url": "assets/pics/prioritizer1.png"
     },
     {
@@ -17,12 +16,12 @@
     },
     {
       "title": "Ranking Widget",
-      "description": "The two items being compared are presented here. The buttons to perform the comparison are clearly visible, and instructions for hotkeys are provided so the mouse is not needed to compare items. After an action, an undo button appears that allows the user to reverse the last comparison, returning the tool to its previous state.",
+      "description": "The two items being compared are shown here. The buttons to perform the comparison are clearly visible, and instructions for hotkeys are provided so the user can compare items with just their keyboard. After an action, an undo button appears to allow the user to reverse the last comparison, returning the tool to its previous state.",
       "img_url": "assets/pics/prioritizer3.png"
     },
     {
       "title": "Ranking Lists",
-      "description": "The lists of unranked and ranked items updates as the user makes each comparison. Not every comparison will result in a final ranking. Undo affects the ranking lists as well.",
+      "description": "The lists of unranked and ranked items update as the user makes each comparison. Not every comparison will result in a final ranking. Undo affects the ranking lists as well.",
       "img_url": "assets/pics/prioritizer4.png"
     },
     {

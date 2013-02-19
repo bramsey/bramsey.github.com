@@ -2,7 +2,6 @@
   "id": "minifylist",
   "title": "Minify List",
   "description": "Helps inventory your stuff and list it for sale online.",
-  "cover_url": "assets/pics/minifylist8.png",
   "cards": [
     {
       "title": "Landing page",
@@ -21,12 +20,12 @@
     },
     {
       "title": "Item Editing",
-      "description": "When the user clicks an item in the dashboard, it switches into editing mode where the item name, tags, and description can be easily set. Tab and shift-tab may be used to switch between the fields and the items so the user doesn't need to use the mouse to enter all the information about their items.",
+      "description": "When the user clicks an item in the dashboard, it switches into editing mode where the item name, tags, and description can be easily set. Tab and shift-tab may be used to switch between fields and other items so the user doesn't need the mouse to enter information about their items.",
       "img_url": "assets/pics/minifylist4.png"
     },
     {
       "title": "Item Thumbnail",
-      "description": "A red X appears when the user hovers over an item, giving the option to delete that item.",
+      "description": "A red X appears when the user hovers over an item, giving the option to delete.",
       "img_url": "assets/pics/minifylist5.png"
     },
     {

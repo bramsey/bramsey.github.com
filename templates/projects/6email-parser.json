@@ -2,17 +2,16 @@
   "id": "email-parser",
   "title": "Flexible Email Parser",
   "demo_url": "http://billiamram.com/email-parser",
-  "description": "Finds email addresses in a blob of inputted text and formats the results for use in sending an email.",
-  "cover_url": "assets/pics/email1.png",
+  "description": "Finds email addresses in a blob of text and formats the results for use in an email client.",
   "cards": [
     {
       "title": "Text Input Screen.",
-      "description": "The initial state of the page. Purpose and instructions are clearly presented with the placeholder of the text area input.",
+      "description": "The initial state of the page. Purpose and instructions are clearly presented by the placeholder of the text area.",
       "img_url": "assets/pics/email1.png"
     },
     {
       "title": "Results",
-      "description": "If any email addresses are found in the blob of text, they appear in a formatted list in a new text area below the original. Upon clicking the new text area, its text becomes selected, making it easier to then copy the text for use in an email client.",
+      "description": "If any email addresses are found in the blob of text, they appear in a formatted list in a new text area below the original. Upon clicking the new text area, its text becomes selected, making it easier to copy the text for use in an email client.",
       "img_url": "assets/pics/email2.png"
     }
   ]
