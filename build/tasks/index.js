@@ -6,7 +6,8 @@ module.exports = function( grunt ) {
             fs = require('fs'),
             title = 'Bill Ramsey',
             projects = [],
-            rootDir = this.data,
+            rootDir = this.data.rootDir,
+            prod = this.data.prod,
             layout, pages, projectFiles, projectPage;
 
         console.log(this.data);
@@ -34,6 +35,7 @@ module.exports = function( grunt ) {
             name = name.replace(/^\d/, '');
             context.project = project;
             context.projects = 'selected';
+            context.prod = prod;
             context.title = name
                 .replace(/\.json/, '')
                 .replace(/\-.*/, '')
@@ -64,6 +66,7 @@ module.exports = function( grunt ) {
             context = {};
 
             context[name.replace(/\.mustache$/, '')] = 'selected';
+            context.prod = prod;
             context.title = name
                 .replace(/\.mustache/, '')
                 .replace(/\-.*/, '')

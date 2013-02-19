@@ -3,6 +3,7 @@
   "title": "Flexible Email Parser",
   "demo_url": "http://billiamram.com/email-parser",
   "description": "Finds email addresses in a blob of text and formats the results for use in an email client.",
+  "github": "https://github.com/bramsey/email-parser",
   "cards": [
     {
       "title": "Text Input Screen.",

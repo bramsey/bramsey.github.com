@@ -24,12 +24,13 @@ module.exports = function(grunt) {
         },
         stylus: stylusOptions,
         index: {
-            rootDir: rootDir
+            dev: {rootDir: rootDir},
+            prod: {rootDir: rootDir, prod: true}
         },
         watch: {
             index: {
                 files: [rootDir + 'templates/**/*'],
-                tasks: 'index'
+                tasks: 'index:dev'
             },
             min: {
                 files: [rootDir + 'js/**/*'],
@@ -50,5 +51,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', 'index stylus min');
+    grunt.registerTask('default', 'index:dev stylus min');
 };

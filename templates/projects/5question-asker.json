@@ -3,6 +3,7 @@
   "title": "Question Asker",
   "demo_url": "http://billiamram.com/question-asker",
   "description": "Efficiently answer yes or no questions about a list of stuff. Another experiment in frictionless user input.",
+  "github": "https://github.com/bramsey/question-asker",
   "cards": [
     {
       "title": "List Input Screen",

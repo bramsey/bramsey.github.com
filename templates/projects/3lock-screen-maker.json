@@ -3,6 +3,7 @@
   "title": "Lock Screen Maker",
   "demo_url": "http://billiamram.com/lock-screen-maker",
   "description": "Quickly save messages to the iPhone lock-screen by generating a perfectly sized image from inputted text. The lock screen is erfect for reminders or motivational messages since you will see it without effort whenever you use your phone.",
+  "github": "https://github.com/bramsey/lock-screen-maker",
   "cards": [
     {
       "title": "Main Screen",

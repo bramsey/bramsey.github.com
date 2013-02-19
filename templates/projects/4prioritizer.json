@@ -3,6 +3,7 @@
   "title": "Prioritizer",
   "demo_url": "http://billiamram.com/prioritizer",
   "description": "Quickly prioritize a list of stuff. Infers ordering based on prior input so you never have to compare two things twice. This is an experiment in frictionless user input.",
+  "github": "https://github.com/bramsey/prioritizer",
   "cards": [
     {
       "title": "List Input Screen",
